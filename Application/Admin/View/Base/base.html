@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+    <meta charset="utf-8"/>
+    <title>大学生社团管理系统</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="__PLUG__/assets/img/favicon.png" type="image/x-icon">
+
+    <!--Basic Styles-->
+    <link href="__PLUG__/assets/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="__PLUG__/assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="__PLUG__/assets/css/dataTables.bootstrap.css" rel="stylesheet"/>
+
+    <!--Beyond styles-->
+    <link href="__PLUG__/assets/css/beyond.min.css" rel="stylesheet"/>
+    <link href="__PLUG__/assets/css/demo.min.css" rel="stylesheet"/>
+    <link href="__PLUG__/assets/css/typicons.min.css" rel="stylesheet"/>
+    <link href="__PLUG__/assets/css/animate.min.css" rel="stylesheet"/>
+    <link href="__PUBLIC__Home/Lib/FileUpload/css/jquery.fileupload.css" rel="stylesheet">
+    <link href="__PUBLIC__Home/Lib/FileUpload/css/jquery.fileupload-ui.css" rel="stylesheet">
+
+    <!--引入css文件-->
+    <block name="style">
+
+    </block>
+    <style>
+        .uploadWallpaperButton {
+            height: 25px;
+            width: 119px;
+            cursor: pointer;
+            margin: 0px -13px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .photo_image {
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            overflow: hidden;
+            font-size: 90px;
+            width: 101px;
+            height: 31px;
+            margin-top: -22%;
+        }
+
+        .pro-gress {
+            margin-bottom: 0px;
+            overflow: hidden;
+        }
+
+        .caption-edit {
+            zoom: 1;
+            filter: alpha(opacity=70);
+            -webkit-opacity: .7;
+            -moz-opacity: .7;
+            opacity: .7;
+            bottom: 3px;
+            left: 0;
+            font-size: 10px;
+            line-height: 9px;
+            position: absolute;
+            padding: 0px 0;
+            text-align: center;
+            width: 128px;
+            height: 34px;
+            cursor: pointer;
+        }
+
+        .btn-primary-edit {
+            background-color: #2dc3e8 !important;
+            width: 120px;
+            height: 31px;
+        }
+    </style>
+
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body>
+<include file="Public:loading"/>
+
+<!---------提示信息模态框------------------>
+<!--End Email Templates-->
+<!--Success Modal Templates-->
+<div id="modal-success" class="modal modal-message modal-success fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="glyphicon glyphicon-check"></i>
+            </div>
+            <div class="modal-title">Success</div>
+
+            <div class="modal-body">You have done great!</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+        <!-- / .modal-content -->
+    </div>
+    <!-- / .modal-dialog -->
+</div>
+<!--End Success Modal Templates-->
+<!--Info Modal Templates-->
+<div id="modal-info" class="modal modal-message modal-info fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="modal-title">Alert</div>
+
+            <div class="modal-body">You'vd got mail!</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+        <!-- / .modal-content -->
+    </div>
+    <!-- / .modal-dialog -->
+</div>
+<!--End Info Modal Templates-->
+<!--Danger Modal Templates-->
+<div id="modal-danger" class="modal modal-message modal-danger fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="glyphicon glyphicon-fire"></i>
+            </div>
+            <div class="modal-title">Alert</div>
+
+            <div class="modal-body">You'vd done bad!</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+        <!-- / .modal-content -->
+    </div>
+    <!-- / .modal-dialog -->
+</div>
+<!--End Danger Modal Templates-->
+<!--Danger Modal Templates-->
+<div id="modal-warning" class="modal modal-message modal-warning fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fa fa-warning"></i>
+            </div>
+            <div class="modal-title">Warning</div>
+
+            <div class="modal-body">Is something wrong?</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+        <!-- / .modal-content -->
+    </div>
+    <!-- / .modal-dialog -->
+</div>
+<!---------------end------------------------->
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="navbar-container">
+            <!-- Navbar Barnd -->
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">
+                    <small>
+                        <img src="__PLUG__/assets/img/logo.png" alt=""/>
+                    </small>
+                </a>
+            </div>
+            <!-- /Navbar Barnd -->
+            <!-- Sidebar Collapse -->
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="collapse-icon fa fa-bars"></i>
+            </div>
+            <!-- /Sidebar Collapse -->
+            <!-- Account Area and Settings --->
+            <div class="navbar-header pull-right">
+                <div class="navbar-account">
+                    <ul class="account-area">
+                        <empty name="recent_activity_info">
+                            <li>
+                                <li class="pull-right dropdown-menu dropdown-tasks dropdown-arrow ">
+                                    <i class="fa fa-tasks"></i>
+                                    事务统计
+                                </li>
+                                <li>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="#">
+                                        <i class="icon fa fa-tasks"></i>
+                                        <if condition="$bool eq true">
+                                            <!--三级-->
+                                            <span class="badge">{$sum}</span>
+                                            <else/>
+                                            <!--干事-->
+                                            <span class="badge">{$count}</span>
+                                        </if>
+
+                                    </a>
+                                    <!--Tasks Dropdown-->
+                                    <ul class="pull-right dropdown-menu dropdown-tasks dropdown-arrow ">
+                                        <li class="dropdown-header bordered-darkorange">
+                                            <i class="fa fa-tasks"></i>
+                                            事务统计
+                                        </li>
+                                        <if condition="$bool eq true">
+                                            <!--三级-->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="clearfix">
+                                                        <span class="pull-left">未处理的社团注册数量</span>
+                                                        <span class="pull-right">{$arr['0']}</span>
+                                                    </div>
+
+                                                    <div class="progress progress-xs">
+                                                        <div class="count progress-bar"></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="clearfix">
+                                                        <span class="pull-left">未处理的社团认证数量</span>
+                                                        <span class="pull-right">{$arr['1']}</span>
+                                                    </div>
+
+                                                    <div class="progress progress-xs">
+                                                        <div class="count progress-bar progress-bar-success"></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <div class="clearfix">
+                                                        <span class="pull-left">未处理的社团活动数量</span>
+                                                        <span class="pull-right">{$arr['2']}</span>
+                                                    </div>
+
+                                                    <div class="progress progress-xs">
+                                                        <div class="count progress-bar progress-bar-darkorange"></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <if condition="$a eq 2">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="clearfix">
+                                                            <span class="pull-left">未处理的新闻数量</span>
+                                                            <span class="pull-right">{$arr['3']}</span>
+                                                        </div>
+
+                                                        <div class="progress progress-xs">
+                                                            <div class="count progress-bar progress-bar-darkorange"></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </if>
+                                            <else/>
+                                            <!--干事-->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="clearfix">
+                                                        <span class="pull-left">未处理的用户数量</span>
+                                                        <span class="pull-right">{$community_count}</span>
+                                                    </div>
+                                                    <div class="progress progress-xs">
+                                                        <div class="count progress-bar"></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="clearfix">
+                                                        <span class="pull-left">未处理的新闻数量</span>
+                                                        <span class="pull-right">{$journalism_count}</span>
+                                                    </div>
+                                                    <div class="progress progress-xs">
+                                                        <div class="count progress-bar"></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </if>
+
+
+
+                                        <li class="dropdown-footer">
+                                            <button class="btn btn-xs btn-default shiny darkorange icon-only pull-right">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <!--/Tasks Dropdown-->
+                                </li>
+                            </li>
+                        <else/>
+                            <li>
+                                <a class="wave in dropdown-toggle" data-toggle="dropdown" title="Help" href="#">
+                                    <i class="icon fa fa-envelope"></i>
+                                    <span class="badge">
+                                        <if condition="$recent_activity_info eq 'null' ">0<else /> {$recent_activity_info["data"]|count}</if>
+                                    </span>
+                                </a>
+                                <!--Messages Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
+                                <empty name="recent_activity_info['data']">
+                                    <li class="dropdown-header bordered-darkorange">
+                                        <i class="fa fa-tasks"></i>
+                                        未来三天内没有活动安排哦！
+                                    </li>
+                                <else />
+                                    <!--<ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">-->
+                                    <foreach name="recent_activity_info['data']" item="vo">
+                                        <li>
+                                            <a href=__MODULE__/PresidentCore/activity_edit/activity_id/{$vo.id}>
+                                                <img src="__ROOT__/Uploads/{$recent_activity_info['icon']}" class="message-avatar" alt="Microsoft Bing">
+                                                <div class="message">
+                                                <span class="message-sender">
+                                                    {$vo.name}
+                                                </span>
+                                                <span class="message-time">
+                                                    {$vo.start_time|date="Y-m-d",###}
+                                                </span>
+                                                <span class="message-subject">
+                                                    {$vo.place}
+                                                </span>
+                                                <span class="message-body">
+                                                    {$vo.theme}
+                                                </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </foreach>
+                                </empty>
+                                </ul>
+                            </li>
+                            <!--/Messages Dropdown-->
+                        </empty>
+                        <li>
+                            <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                <input type="hidden" url="{:U('Base/uploadImg')}" id="uploade_picture">
+
+                                <div style="border-left:none;" class="avatar" title="View your public profile">
+                                    <img id="pthoto" src="__ROOT__/Uploads/{$adm['photo']}">
+                                </div>
+                                <section>
+                                    <h2><span class="profile"><span>{$adm['name']}，您好！</span></span></h2>
+                                </section>
+                            </a>
+                            <!--Login Area Dropdown-->
+                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                <li class="username"><a>{$adm['name']}</a></li>
+                                <li class="email"><a>{$adm['email']}</a></li>
+                                <!--Avatar Area-->
+                                <li>
+                                    <div class="avatar-area">
+                                        <div class="row fileupload-buttonbar">
+                                            <img id="picture_show" style="height: 125px;width: 125px;"
+                                                 src="__ROOT__/Uploads/{$adm['photo']}" data-holder-rendered="true">
+                                            <div>
+                                                <div class="caption" style="background-color: transparent">
+                                                    <span id="photo_document_upload"
+                                                          class="btn btn-info fileinput-button"
+                                                          style="background-color:#2dc3e8;width: 126px;height: 38px;position: absolute;right: 1px;z-index: 2;margin-top: -32px;">
+                                                    <span>修改头像</span>
+                                                    <input type="file" id="photo_document" name="photo_document"
+                                                           style="height: 38px;width: 100px;" multiple>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--<img src="__ROOT__/Uploads/{$adm['photo']}" class="avatar">-->
+                                    </div>
+                                </li>
+                                <!--Avatar Area-->
+                                <li class="edit">
+                                    <a href="{:U('Intruadit/edit_intro')}" class="pull-left">简介</a>
+                                    <a href="{:U('Intruadit/aditpsw')}" class="pull-right">修改密码</a>
+                                </li>
+
+                                <li class="dropdown-footer">
+                                    <a href="{:U('Login/loginout')}">
+                                        退出
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--/Login Area Dropdown-->
+                        </li>
+                    </ul>
+
+                    <div class="setting">
+                        <a id="btn-setting" title="Setting" href="#">
+                            <i class="icon glyphicon glyphicon-cog"></i>
+                        </a>
+                    </div>
+                    <div class="setting-container">
+                        <!--在这里可以对后台的页面板式进行设置 -->
+
+                    </div>
+                    <!-- Settings -->
+                </div>
+            </div>
+            <!-- /Account Area and Settings -->
+        </div>
+    </div>
+</div>
+<!-- /Navbar -->
+<!-- Main Container -->
+<div class="main-container container-fluid">
+    <!-- Page Container -->
+    <div class="page-container">
+        <!-- Page Sidebar -->
+        <div class="page-sidebar" id="sidebar">
+
+            <!-- /Page Sidebar Header -->
+            <!-- Sidebar Menu -->
+            <ul class="nav sidebar-menu">
+                <!--社团状态-->
+                    <li>
+                        <a href="{:U('Index/index')}">
+                            <i class="menu-icon glyphicon glyphicon-home"></i>
+                            <span class="menu-text"> 社团状态</span>
+                        </a>
+                    </li>
+                <!--事务处理会长无权限信息-->
+                <if condition="($posation eq 1)OR ($posation eq 0)">
+                    <!--干事负责发布新闻和新闻审批-->
+                    <elseif condition="$posation eq 3"/>
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-pencil-square-o"></i>
+                            <span class="menu-text" id="mangers"> 事务处理 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:U('home/NewsRelease/new_release')}">
+                                    <span class="menu-text">新闻发布</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:U('home/NewsApproval/news_show')}">
+                                    <span class="menu-text">新闻审批</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--院系管理人员权限-->
+                    <elseif condition="$posation eq 7"/>
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-pencil-square-o"></i>
+                            <span class="menu-text" id="manwgder"> 事务处理 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:U('home/work/manage')}">
+                                    <i class="menu-icon fa fa-rocket"></i>
+                                    <span class="menu-text">社团审批</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{:U('home/work/activity')}">
+                                    <i class="menu-icon glyphicon glyphicon-stats"></i>
+                                    <span class="menu-text">活动审批</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <elseif condition="$posation eq 4"/>
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-pencil-square-o"></i>
+                            <span class="menu-text" id="manwger"> 事务处理 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:U('home/work/manage')}">
+                                    <span class="menu-text">社团审批</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{:U('home/work/activity')}">
+                                    <span class="menu-text">活动审批</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{:U('home/NewsApproval/news_show')}">
+                                    <span class="menu-text">新闻审批</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <else />
+
+                    <li>
+                    <a href="#" class="menu-dropdown">
+                        <i class="menu-icon fa fa-pencil-square-o"></i>
+                        <span class="menu-text" id="manger"> 事务处理 </span>
+                        <i class="menu-expand"></i>
+                    </a>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="{:U('home/CorporationSupervise/show')}">
+                                <span class="menu-text">社团管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-dropdown">
+                                    <span class="menu-text">
+                                        事务审批
+                                    </span>
+                                <i class="menu-expand"></i>
+                            </a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="{:U('home/work/manage')}">
+                                        <i class="menu-icon fa fa-rocket"></i>
+                                        <span class="menu-text">社团审批</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{:U('home/work/activity')}">
+                                        <i class="menu-icon glyphicon glyphicon-stats"></i>
+                                        <span class="menu-text">活动审批</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                </if>
+                <!--Databoxes-->
+                <if condition="($posation eq 1) OR ($posation eq 0) ">
+                    <else />
+                    <li>
+                        <a href="{:U('Dues/dues_query')}">
+                            <i class="menu-icon glyphicon glyphicon-tasks"></i>
+                            <span class="menu-text">会费查询</span>
+                        </a>
+                    </li>
+                </if>
+
+                <!--用户管理会长无法对用户尽行管理-->
+                <if condition="($posation eq 1) OR ($posation eq 7) OR ($posation eq 4) OR ($posation eq 0)">
+                    <elseif condition="($posation eq 3) "/>
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-user"></i>
+                            <span class="menu-text"> 用户管理 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:U('UserManage/member_reply')}">
+                                    <span class="menu-text">会员审批</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <else />
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-user"></i>
+                            <span class="menu-text"> 用户管理 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:U('UserManage/admin_user')}">
+                                    <span class="menu-text">添加用户</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:U('UserManage/add_student')}">
+                                    <span class="menu-text">添加新生</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </if>
+
+                <!--UI Elements-->
+                <if condition="$posation eq 1">
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-desktop"></i>
+                            <span class="menu-text"> 会长中心 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:u('PresidentCore/member_manage')}">
+                                    <span class="menu-text">会员管理</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-dropdown">
+                                    <span class="menu-text">
+                                        社团动态
+                                    </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="{:u('PresidentCore/approve')}">
+                                            <i class="menu-icon fa fa-rocket"></i>
+                                            <span class="menu-text">社团认证</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{:u('PresidentCore/activity')}">
+                                            <i class="menu-icon glyphicon glyphicon-stats"></i>
+                                            <span class="menu-text">活动详情</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{:u('PresidentCore/journalism')}">
+                                            <i class="menu-icon fa fa-bullhorn"></i>
+                                            <span class="menu-text">新闻详情</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <else />
+                </if>
+
+
+                <if condition="$posation eq 0">
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-cog"></i>
+                            <span class="menu-text"> 后台管理 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>.
+                                <a href="{:U('AfterManage/about_us')}">
+                                    <span class="menu-text">关于我们</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:U('AfterManage/feed_back')}">
+                                    <span class="menu-text" s>反馈信息</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </if>
+
+                <if condition="$posation eq 5 ">
+                    <li>
+                        <a href="{:U('LoginLog/login_log')}">
+                            <i class="menu-icon glyphicon glyphicon-exclamation-sign"></i>
+                            <span class="menu-text"> 登录信息 </span>
+                        </a>
+                    </li>
+                </if>
+            </ul>
+            <!-- /Sidebar Menu -->
+        </div>
+        <div class="page-content">
+            <!-- Page Breadcrumb -->
+            <div class="page-breadcrumbs">
+                <ul class="breadcrumb">
+                    <block name="breadcrumb"></block>
+                </ul>
+            </div>
+            <!-- /Page Breadcrumb -->
+            <!-- Page Header -->
+            <div class="page-header position-relative">
+                <div class="header-title">
+                    <block name="header"></block>
+                </div>
+                <!--Header Buttons-->
+                <div class="header-buttons">
+                    <a class="sidebar-toggler" href="#">
+                        <i class="fa fa-arrows-h"></i>
+                    </a>
+                    <a class="refresh" id="refresh-toggler" href="">
+                        <i class="glyphicon glyphicon-refresh"></i>
+                    </a>
+                    <a class="fullscreen" id="fullscreen-toggler" href="#">
+                        <i class="glyphicon glyphicon-fullscreen"></i>
+                    </a>
+                </div>
+                <!--Header Buttons End-->
+            </div>
+            <!-- /Page Header -->
+            <!-- Page Body -->
+            <div class="page-body">
+                <!-- Your Content Goes Here -->
+                <block name="content"></block>
+            </div>
+            <!-- /Page Body -->
+        </div>
+        <!-- /Page Content -->
+    </div>
+    <!-- /Page Container -->
+    <!-- Main Container -->
+</div>
+<!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+<script src="__PLUG__/assets/js/skins.min.js"></script>
+<!--Basic Scripts-->
+<script src="__PLUG__/assets/js/jquery-2.0.3.min.js"></script>
+<script src="__PLUG__/assets/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PLUG__/assets/js/beyond.min.js"></script>
+<script src="__PLUG__/assets/js/datatable/jquery.dataTables.min.js"></script>
+<script src="__PLUG__/assets/js/datatable/dataTables.bootstrap.min.js"></script>
+<script src="__PLUG__/assets/js/datetime/moment.js"></script>
+<script src="__PLUG__/assets/js/datetime/daterangepicker.js"></script>
+<script src="__PLUG__/assets/js/bootbox/bootbox.js"></script>
+<script src="__PLUG__/assets/js/validation/bootstrapValidator.js"></script>
+<script src="__PLUG__/assets/js/fullcalendar/fullcalendar.js"></script>
+<script src="__PUBLIC__Home/Lib/FileUpload/js/vendor/jquery.ui.widget.js"></script>
+<script src="__PUBLIC__Home/Lib/FileUpload/js/jquery.iframe-transport.js"></script>
+<script src="__PUBLIC__Home/Lib/FileUpload/js/jquery.fileupload.js"></script>
+
+<!--------base.js----------->
+<script type="text/javascript" src="__JS__/base.js"></script>
+
+<!--项目常量定义-->
+<script type="text/javascript">
+    var root = '__ROOT__';
+    var app = "__APP__";
+    var controll = "__CONTROLLER__";
+    var action = "__ACTION__";
+    var uploads = '__ROOT__/Uploads/';
+    var open = '__ROOT__/Public';
+    $(function () {
+        //上传插件实例化
+        var picurl = $("#uploade_picture").attr('url');
+        $("#photo_document").fileupload({
+            url: picurl,
+            sequentialUploads: true
+        }).bind('fileuploaddone', function (e, data) { //上传完成后操作
+            if (data.result == 1) {
+                alert_info(1, "修改头像失败", "修改头像失败");
+            } else {
+                $("#picture_show").attr("src", uploads + data.result);
+                $("#pthoto").attr("src", uploads + data.result);
+            }
+        });
+    });
+    $('#photo_document_upload').on('click', function (e) {
+        e.stopPropagation();
+    });//阻止时间冒泡
+</script>
+
+<block name="script"></block>
+</body>
+<!--  /Body -->
+</html>
