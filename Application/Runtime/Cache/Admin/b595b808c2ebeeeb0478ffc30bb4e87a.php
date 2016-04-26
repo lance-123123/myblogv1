@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <!-- Head -->
@@ -8,24 +8,24 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="shortcut icon" href="__PUBLIC__assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/myblogv1/Public/assets/img/favicon.png" type="image/x-icon">
 
     <!--Basic Styles-->
-    <link href="__PUBLIC__assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/myblogv1/Public/assets/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <link href="__PUBLIC__assets/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="__PUBLIC__assets/css/dataTables.bootstrap.css" rel="stylesheet"/>
+    <link href="/myblogv1/Public/assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/myblogv1/Public/assets/css/dataTables.bootstrap.css" rel="stylesheet"/>
 
     <!--Beyond styles-->
-    <link href="__PUBLIC__assets/css/beyond.min.css" rel="stylesheet"/>
-    <link href="__PUBLIC__assets/css/demo.min.css" rel="stylesheet"/>
-    <link href="__PUBLIC__assets/css/typicons.min.css" rel="stylesheet"/>
-    <link href="__PUBLIC__assets/css/animate.min.css" rel="stylesheet"/>
+    <link href="/myblogv1/Public/assets/css/beyond.min.css" rel="stylesheet"/>
+    <link href="/myblogv1/Public/assets/css/demo.min.css" rel="stylesheet"/>
+    <link href="/myblogv1/Public/assets/css/typicons.min.css" rel="stylesheet"/>
+    <link href="/myblogv1/Public/assets/css/animate.min.css" rel="stylesheet"/>
 
     <!--引入css文件-->
-    <block name="style">
+    
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/index.css">-->
 
-    </block>
     <style>
         .uploadWallpaperButton {
             height: 25px;
@@ -81,7 +81,7 @@
 <!-- /Head -->
 <!-- Body -->
 <body>
-<include file="Public:loading"/>
+
 <!-- Navbar -->
 <div class="navbar">
     <div class="navbar-inner">
@@ -90,7 +90,7 @@
             <div class="navbar-header pull-left">
                 <a href="#" class="navbar-brand">
                     <small>
-                        <img src="__PUBLIC__assets/img/logo.png" alt="" />
+                        <img src="/myblogv1/Public/assets/img/logo.png" alt="" />
                     </small>
                 </a>
             </div>
@@ -240,14 +240,21 @@
             <!-- Page Breadcrumb -->
             <div class="page-breadcrumbs">
                 <ul class="breadcrumb">
-                    <block name="breadcrumb"></block>
+                    
+    <li>
+        <i class="fa fa-home"></i>
+        <a href="#">首页</a>
+    </li>
+    <li class="active">网站访问量</li>
+
                 </ul>
             </div>
             <!-- /Page Breadcrumb -->
             <!-- Page Header -->
             <div class="page-header position-relative">
                 <div class="header-title">
-                    <block name="header"></block>
+                    
+
                 </div>
                 <!--Header Buttons-->
                 <div class="header-buttons">
@@ -267,7 +274,31 @@
             <!-- Page Body -->
             <div class="page-body">
                 <!-- Your Content Goes Here -->
-                <block name="content"></block>
+                
+    <div class="page-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="widget">
+                    <div class="widget-header ">
+                        <span class="widget-caption"><i class="fa fa-globe"></i>&nbsp;&nbsp;网站访问量</span>
+                        <div class="widget-buttons">
+                            <a href="#" data-toggle="maximize">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <a href="#" data-toggle="collapse">
+                                <i class="fa fa-minus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="widget-body">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
             </div>
             <!-- /Page Body -->
         </div>
@@ -277,35 +308,35 @@
     <!-- Main Container -->
 </div>
 <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
-<script src="__PUBLIC__assets/js/skins.min.js"></script>
+<script src="/myblogv1/Public/assets/js/skins.min.js"></script>
 <!--Basic Scripts-->
-<script src="__PUBLIC__assets/js/jquery-2.0.3.min.js"></script>
-<script src="__PUBLIC__assets/js/bootstrap.min.js"></script>
+<script src="/myblogv1/Public/assets/js/jquery-2.0.3.min.js"></script>
+<script src="/myblogv1/Public/assets/js/bootstrap.min.js"></script>
 
 <!--Beyond Scripts-->
-<script src="__PUBLIC__assets/js/beyond.min.js"></script>
-<script src="__PUBLIC__assets/js/datatable/jquery.dataTables.min.js"></script>
-<script src="__PUBLIC__assets/js/datatable/dataTables.bootstrap.min.js"></script>
-<script src="__PUBLIC__assets/js/datetime/moment.js"></script>
-<script src="__PUBLIC__assets/js/datetime/daterangepicker.js"></script>
-<script src="__PUBLIC__assets/js/bootbox/bootbox.js"></script>
-<script src="__PUBLIC__assets/js/validation/bootstrapValidator.js"></script>
-<script src="__PUBLIC__assets/js/fullcalendar/fullcalendar.js"></script>
-<!--<script src="__PUBLIC__Home/Lib/FileUpload/js/vendor/jquery.ui.widget.js"></script>
-<script src="__PUBLIC__Home/Lib/FileUpload/js/jquery.iframe-transport.js"></script>
-<script src="__PUBLIC__Home/Lib/FileUpload/js/jquery.fileupload.js"></script>-->
+<script src="/myblogv1/Public/assets/js/beyond.min.js"></script>
+<script src="/myblogv1/Public/assets/js/datatable/jquery.dataTables.min.js"></script>
+<script src="/myblogv1/Public/assets/js/datatable/dataTables.bootstrap.min.js"></script>
+<script src="/myblogv1/Public/assets/js/datetime/moment.js"></script>
+<script src="/myblogv1/Public/assets/js/datetime/daterangepicker.js"></script>
+<script src="/myblogv1/Public/assets/js/bootbox/bootbox.js"></script>
+<script src="/myblogv1/Public/assets/js/validation/bootstrapValidator.js"></script>
+<script src="/myblogv1/Public/assets/js/fullcalendar/fullcalendar.js"></script>
+<!--<script src="/myblogv1/Public/Home/Lib/FileUpload/js/vendor/jquery.ui.widget.js"></script>
+<script src="/myblogv1/Public/Home/Lib/FileUpload/js/jquery.iframe-transport.js"></script>
+<script src="/myblogv1/Public/Home/Lib/FileUpload/js/jquery.fileupload.js"></script>-->
 
 <!--------base.js----------->
 <!--<script type="text/javascript" src="__JS__/base.js"></script>-->
 
 <!--项目常量定义-->
 <script type="text/javascript">
-   /* var root = '__ROOT__';
-    var app = "__APP__";
-    var controll = "__CONTROLLER__";
-    var action = "__ACTION__";
-    var uploads = '__ROOT__/Uploads/';
-    var open = '__ROOT__/Public';*/
+   /* var root = '/myblogv1';
+    var app = "/myblogv1/index.php";
+    var controll = "/myblogv1/index.php/Admin/Index";
+    var action = "/myblogv1/index.php/Admin/Index/index";
+    var uploads = '/myblogv1/Uploads/';
+    var open = '/myblogv1/Public';*/
   /*  $(function () {
         //上传插件实例化
         var picurl = $("#uploade_picture").attr('url');
@@ -326,7 +357,10 @@
     });//阻止时间冒泡*/
 </script>
 
-<block name="script"></block>
+
+   <!-- <script type="text/javascript" src="__JS__/index.js"></script>
+    <script type="text/javascript" src="/myblogv1/Public//Home/Data/js/jquery.tmpl.js"></script>-->
+
 </body>
 <!--  /Body -->
 </html>

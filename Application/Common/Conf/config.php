@@ -17,8 +17,8 @@ return array(
 
     /* 模板替换 */
     'TMPL_PARSE_STRING'     =>   array(
-							 	    '__PUBLIC__'     => '/Public/',
-							 	    '__Uploads__'    => '/Uploads/', 
+							 	    '__PUBLIC__'     => __ROOT__.'/Public/',
+							 	    '__Uploads__'    => __ROOT__.'/Uploads/',
 						    ),
     /* URL配置 */
     'URL_CASE_INSENSITIVE' => true, //默认false 表示URL区分大小写 true则表示不区分大小写
