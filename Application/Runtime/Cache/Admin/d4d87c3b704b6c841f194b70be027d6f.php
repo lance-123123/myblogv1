@@ -24,8 +24,7 @@
 
     <!--引入css文件-->
     
-    <link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/static/upfile/css/jquery.fileupload.css">
-    <link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/static/upfile/css/jquery.fileupload-ui.css">
+    <!--<link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/css/index.css">-->
 
     <style>
         .uploadWallpaperButton {
@@ -243,10 +242,10 @@
                 <ul class="breadcrumb">
                     
     <li>
-        <i class="fa fa-edit"></i>
-        <a href="#">写文章</a>
+        <i class="fa fa-desktop"></i>
+        <a href="#">后台管理</a>
     </li>
-    <li class="active">添加博客</li>
+    <li class="active">博客管理</li>
 
                 </ul>
             </div>
@@ -281,7 +280,7 @@
             <div class="col-xs-12 col-md-12">
                 <div class="widget">
                     <div class="widget-header ">
-                        <span class="widget-caption"><i class="fa fa-pencil"></i>&nbsp;&nbsp;添加博客</span>
+                        <span class="widget-caption"><i class="fa fa-desktop"></i>&nbsp;&nbsp;博客管理</span>
                         <div class="widget-buttons">
                             <a href="#" data-toggle="maximize">
                                 <i class="fa fa-expand"></i>
@@ -292,48 +291,7 @@
                         </div>
                     </div>
                     <div class="widget-body">
-                        <div class="row">
-                            <input type="hidden" value="<?php echo U('AddBlog/submitphoto');?>" id="upimagurl">
-                            <input type="hidden" value="/myblogv1/Uploads/" id="show_image">
-                            <div class="col-lg-12 col-sm-12 col-xs-12">
-                            <form method="post" id="form" action="<?php echo U('AddBlog/submitblog');?>" role="form">
-                                <div class="form-group">
-                                    <label>标题</label>
-                                    <input class="form-control" name="title" placeholder="博客标题最多只能13个字"  maxlength="13" id="title">
-                                </div>
 
-                                <div class="form-group">
-                                    <label>内容</label>
-                                    <textarea id="editor" name="content">
-                                    </textarea>
-                                </div>
-
-                                <div class="form-group" style="margin-left: 7%">
-                                    <div class="row fileupload-buttonbar">
-                                        <div class="thumbnail col-sm-11" align="center">
-                                            <img id="weixin_show" style="height:180px;margin-top:10px;margin-bottom:8px;"  src="/myblogv1/Public/admin/image/journalism_default.png" data-holder-rendered="true">
-                                            <div class="progress progress-striped active" role="progressbar" aria-valuemin="10" aria-valuemax="100" aria-valuenow="0"><div id="document_progress" class="progress-bar progress-bar-success" style="width:0%;"></div></div>
-                                            <div class="caption" align="center">
-                                                <span id="document_upload" class="btn btn-primary fileinput-button">
-                                                <span>选择封面图片</span>
-                                                <input type="file" id="document" name="document" multiple>
-                                                </span>
-                                                <a id="document_cancle" href="javascript:void(0)" class="btn btn-warning" role="button"  style="display:none">删除</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>标签</label>
-                                        <input type="text" id="tagsvalue" class="form-control" value="技术" data-role="tagsinput" name="tags" placeholder="Add tags" />
-                                </div>
-
-                                <input type="hidden" id="photourl">
-                                <button type="submit" class="btn btn-success" id="submitbutton" style="margin-left: 90%">提 交</button>
-                            </form>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -376,14 +334,14 @@
 <script type="text/javascript">
     var root = '/myblogv1';
     var app = "/myblogv1/index.php";
-    var controll = "/myblogv1/index.php/Admin/AddBlog";
-    var action = "/myblogv1/index.php/Admin/AddBlog/addblog";
+    var controll = "/myblogv1/index.php/Admin/Mangement";
+    var action = "/myblogv1/index.php/Admin/Mangement/manage_blog";
     var uploads = '/myblogv1/Uploads/';
     var open = '/myblogv1/Public';
    /* var root = '/myblogv1';
     var app = "/myblogv1/index.php";
-    var controll = "/myblogv1/index.php/Admin/AddBlog";
-    var action = "/myblogv1/index.php/Admin/AddBlog/addblog";
+    var controll = "/myblogv1/index.php/Admin/Mangement";
+    var action = "/myblogv1/index.php/Admin/Mangement/manage_blog";
     var uploads = '/myblogv1/Uploads/';
     var open = '/myblogv1/Public';*/
   /*  $(function () {
@@ -407,27 +365,8 @@
 </script>
 
 
-    <script src="/myblogv1/Public/assets/js/tagsinput/bootstrap-tagsinput.js"></script>
-    <script src="/myblogv1/Public/assets/js/editors/wysiwyg/jquery.hotkeys.js"></script>
-    <script src="/myblogv1/Public/assets/js/editors/wysiwyg/prettify.js"></script>
-    <script src="/myblogv1/Public/assets/js/editors/wysiwyg/bootstrap-wysiwyg.js"></script>
-    <script src="/myblogv1/Public/assets/js/editors/summernote/summernote.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/myblogv1/Public/admin/static/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/myblogv1/Public/admin/static/ueditor/ueditor.all.min.js"> </script>
-    <script type="text/javascript" charset="utf-8" src="/myblogv1/Public/admin/static/ueditor/lang/zh-cn/zh-cn.js"></script>
-
-    <script type="text/javascript" src="/myblogv1/Public/admin/static/upfile/js/vendor/jquery.ui.widget.js"></script>
-    <script type="text/javascript" src="/myblogv1/Public/admin/static/upfile/js/jquery.fileupload.js"></script>
-    <script type="text/javascript" src="/myblogv1/Public/admin/static/upfile/js/jquery.iframe-transport.js"></script>
-    <script type="text/javascript" src="/myblogv1/Public/admin/static/upfile/js/jquery.fileupload.js"></script>
-
-    <script src="/myblogv1/Public/admin/js/addblog.js"></script>
-    <script type="text/javascript">
-        /*加载ue插件*/
-        var ue = UE.getEditor('editor');
-        /*给文本框添加宽度*/
-        $("textarea").css("height","300px");
-    </script>
+    <!-- <script type="text/javascript" src="/myblogv1/Public/admin/js/index.js"></script>
+     <script type="text/javascript" src="/myblogv1/Public//Home/Data/js/jquery.tmpl.js"></script>-->
 
 </body>
 <!--  /Body -->
