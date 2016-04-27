@@ -1,0 +1,106 @@
+<extend name="Base/base" />
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/upfile/css/jquery.fileupload.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/upfile/css/jquery.fileupload-ui.css">
+</block>
+
+<block name="breadcrumb">
+    <li>
+        <i class="fa fa-edit"></i>
+        <a href="#">写文章</a>
+    </li>
+    <li class="active">添加博客</li>
+</block>
+
+<block name="header">
+</block>
+<block name="content">
+    <div class="page-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="widget">
+                    <div class="widget-header ">
+                        <span class="widget-caption"><i class="fa fa-pencil"></i>&nbsp;&nbsp;添加博客</span>
+                        <div class="widget-buttons">
+                            <a href="#" data-toggle="maximize">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <a href="#" data-toggle="collapse">
+                                <i class="fa fa-minus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="widget-body">
+                        <div class="row">
+                            <input type="hidden" value="{:U('AddBlog/submitphoto')}" id="upimagurl">
+                            <input type="hidden" value="__Uploads__" id="show_image">
+                            <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <form method="post" id="form" action="{:U('AddBlog/submitblog')}" role="form">
+                                <div class="form-group">
+                                    <label>标题</label>
+                                    <input class="form-control" name="title" placeholder="博客标题最多只能13个字"  maxlength="13" id="title">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>内容</label>
+                                    <textarea id="editor" name="content">
+                                    </textarea>
+                                </div>
+
+                                <div class="form-group" style="margin-left: 7%">
+                                    <div class="row fileupload-buttonbar">
+                                        <div class="thumbnail col-sm-11" align="center">
+                                            <img id="weixin_show" style="height:180px;margin-top:10px;margin-bottom:8px;"  src="__IMG__/journalism_default.png" data-holder-rendered="true">
+                                            <div class="progress progress-striped active" role="progressbar" aria-valuemin="10" aria-valuemax="100" aria-valuenow="0"><div id="document_progress" class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+                                            <div class="caption" align="center">
+                                                <span id="document_upload" class="btn btn-primary fileinput-button">
+                                                <span>选择封面图片</span>
+                                                <input type="file" id="document" name="document" multiple>
+                                                </span>
+                                                <a id="document_cancle" href="javascript:void(0)" class="btn btn-warning" role="button"  style="display:none">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>标签</label>
+                                        <input type="text" id="tagsvalue" class="form-control" value="技术" data-role="tagsinput" name="tags" placeholder="Add tags" />
+                                </div>
+
+                                <input type="hidden" id="photourl">
+                                <button type="submit" class="btn btn-success" id="submitbutton" style="margin-left: 90%">提 交</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script src="__PUBLIC__assets/js/tagsinput/bootstrap-tagsinput.js"></script>
+    <script src="__PUBLIC__assets/js/editors/wysiwyg/jquery.hotkeys.js"></script>
+    <script src="__PUBLIC__assets/js/editors/wysiwyg/prettify.js"></script>
+    <script src="__PUBLIC__assets/js/editors/wysiwyg/bootstrap-wysiwyg.js"></script>
+    <script src="__PUBLIC__assets/js/editors/summernote/summernote.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+    <script type="text/javascript" src="__STATIC__/upfile/js/vendor/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="__STATIC__/upfile/js/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="__STATIC__/upfile/js/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="__STATIC__/upfile/js/jquery.fileupload.js"></script>
+
+    <script src="__JS__/addblog.js"></script>
+    <script type="text/javascript">
+        /*加载ue插件*/
+        var ue = UE.getEditor('editor');
+        /*给文本框添加宽度*/
+        $("textarea").css("height","300px");
+    </script>
+</block>

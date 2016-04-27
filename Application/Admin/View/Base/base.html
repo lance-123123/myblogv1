@@ -171,14 +171,14 @@
             <!-- Sidebar Menu -->
             <ul class="nav sidebar-menu">
                 <li class="active">
-                    <a href="index.html">
+                    <a href="{:U('AddBlog/addblog')}">
                         <i class="menu-icon glyphicon glyphicon-home"></i>
                         <span class="menu-text"> 首页 </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="widgets.html">
+                    <a href="{:U('AddBlog/addblog')}">
                         <i class="menu-icon fa  fa-edit"></i>
                         <span class="menu-text"> 写文章 </span>
                     </a>
@@ -281,6 +281,7 @@
 <!--Basic Scripts-->
 <script src="__PUBLIC__assets/js/jquery-2.0.3.min.js"></script>
 <script src="__PUBLIC__assets/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__assets/js/Base.js"></script>
 
 <!--Beyond Scripts-->
 <script src="__PUBLIC__assets/js/beyond.min.js"></script>
@@ -300,6 +301,12 @@
 
 <!--项目常量定义-->
 <script type="text/javascript">
+    var root = '__ROOT__';
+    var app = "__APP__";
+    var controll = "__CONTROLLER__";
+    var action = "__ACTION__";
+    var uploads = '__ROOT__/Uploads/';
+    var open = '__ROOT__/Public';
    /* var root = '__ROOT__';
     var app = "__APP__";
     var controll = "__CONTROLLER__";

@@ -24,7 +24,7 @@
 
     <!--引入css文件-->
     
-    <!--<link rel="stylesheet" type="text/css" href="__CSS__/index.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/css/index.css">-->
 
     <style>
         .uploadWallpaperButton {
@@ -171,14 +171,14 @@
             <!-- Sidebar Menu -->
             <ul class="nav sidebar-menu">
                 <li class="active">
-                    <a href="index.html">
+                    <a href="<?php echo U('AddBlog/addblog');?>">
                         <i class="menu-icon glyphicon glyphicon-home"></i>
                         <span class="menu-text"> 首页 </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="widgets.html">
+                    <a href="<?php echo U('AddBlog/addblog');?>">
                         <i class="menu-icon fa  fa-edit"></i>
                         <span class="menu-text"> 写文章 </span>
                     </a>
@@ -327,7 +327,7 @@
 <script src="/myblogv1/Public/Home/Lib/FileUpload/js/jquery.fileupload.js"></script>-->
 
 <!--------base.js----------->
-<!--<script type="text/javascript" src="__JS__/base.js"></script>-->
+<!--<script type="text/javascript" src="/myblogv1/Public/admin/js/base.js"></script>-->
 
 <!--项目常量定义-->
 <script type="text/javascript">
@@ -358,7 +358,7 @@
 </script>
 
 
-   <!-- <script type="text/javascript" src="__JS__/index.js"></script>
+   <!-- <script type="text/javascript" src="/myblogv1/Public/admin/js/index.js"></script>
     <script type="text/javascript" src="/myblogv1/Public//Home/Data/js/jquery.tmpl.js"></script>-->
 
 </body>
