@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78873960-b438-4007-a838-ce85f3db82c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/admin/js/manage_blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/16_04_27.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/16_04_27.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/AddBlogController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/AddBlogController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/MangementController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/MangementController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Base/base.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Base/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d4d87c3b704b6c841f194b70be027d6f.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d4d87c3b704b6c841f194b70be027d6f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/de12c25fb4fc4e10f55bec2ad3aaedfe.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/de12c25fb4fc4e10f55bec2ad3aaedfe.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Mangement/manage_blog.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Mangement/manage_blog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/16_05_12.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/16_05_12.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/admin/js/manage_blog.js" afterPath="$PROJECT_DIR$/Public/admin/js/manage_blog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myblogv1.iws" />
@@ -104,8 +97,8 @@
       <file leaf-file-name="manage_blog.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Public/admin/js/manage_blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.4651163" vertical-offset="3300" max-vertical-offset="4378">
-              <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.753915" vertical-offset="3601" max-vertical-offset="4444">
+              <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -445,7 +438,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15986949" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20228384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -892,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/admin/js/manage_blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4651163" vertical-offset="3300" max-vertical-offset="4378">
-          <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.753915" vertical-offset="3601" max-vertical-offset="4444">
+          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,8 +1,10 @@
 $(function(){
     GetData();
+
     $(".btn-add").on("click", function () {
         window.location.href = $(this).attr("data");
     });
+
     $(".btn-edit").on("click", function () {
         var id = $(".tr-selected").attr("data");
         if (id === undefined) {
@@ -178,6 +180,7 @@ function del(e, event) {
         deleteRow(id);
     });
 }
+
 function deleteRow(ids) {
     $.post($(".btn-del").attr("data"), {id: ids}, function (d) {
         if (d.code == 0) {
