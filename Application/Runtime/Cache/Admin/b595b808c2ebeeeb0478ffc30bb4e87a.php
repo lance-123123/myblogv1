@@ -194,7 +194,7 @@
 
                     <ul class="submenu">
                         <li>
-                            <a href="elements.html">
+                            <a href="<?php echo U('Mangement/manage_blog');?>">
                                 <span class="menu-text">博客管理</span>
                             </a>
                         </li>
@@ -312,6 +312,7 @@
 <!--Basic Scripts-->
 <script src="/myblogv1/Public/assets/js/jquery-2.0.3.min.js"></script>
 <script src="/myblogv1/Public/assets/js/bootstrap.min.js"></script>
+<script src="/myblogv1/Public/assets/js/Base.js"></script>
 
 <!--Beyond Scripts-->
 <script src="/myblogv1/Public/assets/js/beyond.min.js"></script>
@@ -322,9 +323,7 @@
 <script src="/myblogv1/Public/assets/js/bootbox/bootbox.js"></script>
 <script src="/myblogv1/Public/assets/js/validation/bootstrapValidator.js"></script>
 <script src="/myblogv1/Public/assets/js/fullcalendar/fullcalendar.js"></script>
-<!--<script src="/myblogv1/Public/Home/Lib/FileUpload/js/vendor/jquery.ui.widget.js"></script>
-<script src="/myblogv1/Public/Home/Lib/FileUpload/js/jquery.iframe-transport.js"></script>
-<script src="/myblogv1/Public/Home/Lib/FileUpload/js/jquery.fileupload.js"></script>-->
+
 
 <!--------base.js----------->
 <!--<script type="text/javascript" src="/myblogv1/Public/admin/js/base.js"></script>-->

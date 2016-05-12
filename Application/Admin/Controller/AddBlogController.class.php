@@ -18,13 +18,14 @@ class AddBlogController extends Controller{
      *提交添加的博客
      */
     public function submitblog(){
-     $blog=M('blog');
-     $data['title']=I('post.title');
-     $data['blog_photo']=I('post.photourl');
-     $data['blog_content']=I('post.blog_content');
-     $data['tags']=I('post.choice');
-     $data['public_date']=time();
-     $add_blog=$blog->data($data)->add();
+        $blog=M('blog');
+        $data['title']=I('post.title');
+        $data['blog_photo']=I('post.photourl');
+        $data['blog_content']=I('post.blog_content');
+        $data['tags']=I('post.choice');
+        $data['public_date']=time();
+        $data['update_time']=time();
+        $add_blog=$blog->data($data)->add();
          if($add_blog){
             $this->ajaxReturn(0);
          }else{
