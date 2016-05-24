@@ -27,53 +27,148 @@
     <!--<link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/css/index.css">-->
 
     <style>
-        .uploadWallpaperButton {
-            height: 25px;
-            width: 119px;
-            cursor: pointer;
-            margin: 0px -13px;
-            border-radius: 5px;
-            cursor: pointer;
+        div.dataTables_filter label {
+            float: right;
+            margin-right: 70px;
         }
 
-        .photo_image {
-            cursor: pointer;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            overflow: hidden;
-            font-size: 90px;
-            width: 101px;
-            height: 31px;
-            margin-top: -22%;
+        div.dataTables_filter {
+            margin-top: -31px;
+        }
+        .serverSide div.dataTables_length{
+            top:-38px;
+        }
+        .modal-header {
+            border-bottom: 3px solid #03b3b2;
         }
 
-        .pro-gress {
+        input[type=checkbox]:checked + .text:before {
+            border: 0px;
+            background: transparent;
+        }
+
+        input[type=checkbox] + .text:before {
+            border: 0px;
+            color: #03b3b2;
+            background: transparent;
+        }
+
+        .table-toolbar .dropdown label {
+            width: 100%;
+            cursor: pointer;
             margin-bottom: 0px;
-            overflow: hidden;
         }
 
-        .caption-edit {
-            zoom: 1;
-            filter: alpha(opacity=70);
-            -webkit-opacity: .7;
-            -moz-opacity: .7;
-            opacity: .7;
-            bottom: 3px;
-            left: 0;
-            font-size: 10px;
-            line-height: 9px;
-            position: absolute;
-            padding: 0px 0;
+        .panel-body label {
+            padding: 7px;
+            border: 1px solid #d5d5d5;
+            border-right: 0px;
+            margin-top: 1px;
+            color: #858585;
+            background-color: #f5f5f5;
+        }
+
+        .panel-body input {
+            padding: 7px;
+            border: 1px solid #d5d5d5;
+            color: #858585;
+            background-color: #fbfbfb;
+        }
+
+        .dataTables_empty {
             text-align: center;
-            width: 128px;
-            height: 34px;
+        }
+
+        .panel-body .input-group {
+            margin-right: 10px;
+        }
+
+        .panel-body select {
+            -webkit-appearance: none;
+            border-radius: 0px;
+
+        }
+
+        .panel-body .input-group-btn {
+            left: -18px;
+            z-index: 10;
+        }
+
+        .panel-group {
+            margin-bottom: 10px;
+        }
+
+        .input-icon.icon-right > input {
+            padding-left: 14px;
+        }
+
+        .panel-body .col-lg-2 {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .dropdown-menu {
+            z-index: 999999;
+        }
+
+        .bootbox-confirm .modal-dialog {
+            width: 250px;
+        }
+
+        .btn-group {
+            z-index: 100;
+        }
+
+        .animated {
+            -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .table-striped > tbody > tr > td {
             cursor: pointer;
         }
 
-        .btn-primary-edit {
-            background-color: #2dc3e8 !important;
-            width: 120px;
-            height: 31px;
+        .table > tbody > tr > td {
+            vertical-align: middle;
+        }
+
+        .table-striped > tbody > tr.tr-selected > td {
+            background-color: #eed;
+        }
+
+        .tree-selected > .tree-dot:before {
+            content: "\f046";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .table-toolbar .panel-body select, .panel-body input {
+            min-width: 150px;
+        }
+
+        .table-toolbar .panel-body input {
+            min-width: 150px;
+        }
+
+        .table-toolbar .panel-body label {
+            border-radius: 0 !important;
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0d…0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+            background-image: -webkit-linear-gradient(top, #eee 0, #fbfbfb 100%);
+            background-image: -moz-linear-gradient(top, #eee 0, #fbfbfb 100%);
+            background-image: -o-linear-gradient(top, #eee 0, #fbfbfb 100%);
+            background-image: linear-gradient(to bottom, #eee 0, #fbfbfb 100%);
+            position: relative;
+            left: 4px;
+            padding: 7px 14px;
+        }
+
+        .table-toolbar {
+            padding: 0px;
         }
     </style>
 
@@ -330,6 +425,15 @@
 
 <!--项目常量定义-->
 <script type="text/javascript">
+    $(function(){
+        //打开导航
+        var text = $(".breadcrumb").find("li").eq($(".breadcrumb").find("li").length-1).text();
+        for(var i=0;i<$(".menu-text").length;i++){
+            if($(".menu-text").eq(i).text() == text){
+                $(".menu-text").eq(i).parents("li").addClass("open");
+            }
+        }
+    });
    /* var root = '/myblogv1';
     var app = "/myblogv1/index.php";
     var controll = "/myblogv1/index.php/Admin/Index";

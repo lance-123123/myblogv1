@@ -24,7 +24,8 @@
 
     <!--引入css文件-->
     
-    <!--<link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/css/index.css">-->
+    <link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/static/upfile/css/jquery.fileupload.css">
+    <link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/static/upfile/css/jquery.fileupload-ui.css">
 
     <style>
         div.dataTables_filter label {
@@ -337,10 +338,10 @@
                 <ul class="breadcrumb">
                     
     <li>
-        <i class="fa fa-desktop"></i>
-        <a href="#">后台管理</a>
+        <i class="fa fa-edit"></i>
+        <a href="#">写文章</a>
     </li>
-    <li class="active">博客管理</li>
+    <li class="active">添加博客</li>
 
                 </ul>
             </div>
@@ -375,7 +376,7 @@
             <div class="col-xs-12 col-md-12">
                 <div class="widget">
                     <div class="widget-header ">
-                        <span class="widget-caption"><i class="fa fa-desktop"></i>&nbsp;&nbsp;博客管理</span>
+                        <span class="widget-caption"><i class="fa fa-pencil"></i>&nbsp;&nbsp;添加博客</span>
                         <div class="widget-buttons">
                             <a href="#" data-toggle="maximize">
                                 <i class="fa fa-expand"></i>
@@ -386,70 +387,55 @@
                         </div>
                     </div>
                     <div class="widget-body">
-                        <div class="table-toolbar">
-                            <div class="panel-group accordion" id="accordion" style="margin-bottom: 8px;">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading ">
-                                        <h4 class="panel-title">
-                                            <a class="accordion-toggle collapsed" data-toggle="collapse"
-                                               data-parent="#accordion"
-                                               href="#collapseOne">
-                                                <i class="fa fa-search"></i> 高级搜索
-                                            </a>
-                                        </h4>
+                        <div class="row">
+                            <input type="hidden" value="<?php echo U('AddBlog/submitphoto');?>" id="upimagurl">
+                            <input type="hidden" value="<?php echo U('Mangement/manage_blog');?>" id="blog_path">
+                            <input type="hidden" value="/myblogv1/Uploads/" id="show_image">
+                            <div class="col-lg-12 col-sm-12 col-xs-12">
+                                <form method="post" id="form" action="<?php echo U('Mangement/submit_blog');?>" role="form">
+                                   <input type="hidden" id="blog_id" value="<?php echo ($blog_data["id"]); ?>">
+                                    <div class="form-group">
+                                        <label>标题</label>
+                                        <input class="form-control" name="title" placeholder="博客标题最多只能13个字"  maxlength="13" id="title" value="<?php echo ($blog_data["title"]); ?>">
                                     </div>
 
-                                    <div id="collapseOne" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                               <label>状态</label>
-                                                <select id="status">
-                                                    <option value="0">启用</option>
-                                                    <option value="1">禁用</option>
-                                                </select>
-                                            <button type="submit" class="btn btn-primary" style="margin-top: -5px" onclick="javascript:GetData();"><i class="fa fa-search"></i>搜索</button>
+                                    <div class="form-group">
+                                        <label>内容</label>
+                                    <textarea id="editor" name="content" >
+                                        <?php echo ($blog_data["blog_content"]); ?>
+                                    </textarea>
+                                    </div>
+
+                                    <div class="form-group" style="margin-left: 7%">
+                                        <div class="row fileupload-buttonbar">
+                                            <div class="thumbnail col-sm-11" align="center">
+                                                <img id="weixin_show" style="height:180px;margin-top:10px;margin-bottom:8px;"  src="/myblogv1/Uploads//<?php echo ($blog_data["blog_photo"]); ?>" data-holder-rendered="true">
+                                                <div class="progress progress-striped active" role="progressbar" aria-valuemin="10" aria-valuemax="100" aria-valuenow="0"><div id="document_progress" class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+                                                <div class="caption" align="center">
+                                                <span id="document_upload" class="btn btn-primary fileinput-button">
+                                                <span>选择封面图片</span>
+                                                <input type="file" id="document" name="document" multiple>
+                                                </span>
+                                                    <a id="document_cancle" href="javascript:void(0)" class="btn btn-warning" role="button"  style="display:none">删除</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+
+                                    <div class="form-group">
+                                        <label>标签</label>
+                                        <input type="text" id="tagsvalue" class="form-control" value="<?php echo ($blog_data["tags"]); ?>" data-role="tagsinput" name="tags" placeholder="Add tags" />
+                                    </div>
+
+                                    <input type="hidden" id="photourl" value="<?php echo ($blog_data["blog_photo"]); ?>">
+                                    <button type="submit" class="btn btn-success" id="submitbutton" style="margin-left: 90%">提 交</button>
+                                </form>
                             </div>
                         </div>
-
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default btn-add"
-                                    data="<?php echo U('admin/AddBlog/addblog');?>"><i
-                                    class="fa fa-plus-square"></i> 新增
-                            </button>
-                            <button type="button" class="btn btn-default btn-edit"
-                                    data="<?php echo U('admin/Mangement/edit_blog');?>"><i
-                                    class="fa fa-pencil-square"></i> 编辑
-                            </button>
-                            <button type="button" class="btn btn-default btn-del"
-                                    data="<?php echo U('admin/stud/manage_delete');?>"><i
-                                    class="fa fa-minus-square"></i> 删除
-                            </button>
-                            <input type="hidden" id="change" value="<?php echo U('Admin/Mangement/change_status');?>">
-                        </div>
-
-                        <div role="grid" id="simpledatatable_wrapper" class="dataTables_wrapper form-inline no-footer">
-                            <table class="table table-striped table-bordered table-hover" id="simpledatatable">
-                                <thead>
-                                <tr>
-                                    <th>名称</th>
-                                    <th>标签</th>
-                                    <th>浏览量</th>
-                                    <th>点赞量</th>
-                                    <th>更新日期</th>
-                                    <th> 状态</th>
-                                    <th> 操作</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                        <input type="hidden" id="data" value="<?php echo U('Mangement/get_blog_data');?>">
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -496,7 +482,7 @@
    /* var root = '/myblogv1';
     var app = "/myblogv1/index.php";
     var controll = "/myblogv1/index.php/Admin/Mangement";
-    var action = "/myblogv1/index.php/Admin/Mangement/manage_blog";
+    var action = "/myblogv1/index.php/Admin/Mangement/edit_blog";
     var uploads = '/myblogv1/Uploads/';
     var open = '/myblogv1/Public';*/
   /*  $(function () {
@@ -520,7 +506,26 @@
 </script>
 
 
-    <script type="text/javascript" src="/myblogv1/Public/admin/js/manage_blog.js"></script>
+    <script src="/myblogv1/Public/assets/js/tagsinput/bootstrap-tagsinput.js"></script>
+    <script src="/myblogv1/Public/assets/js/editors/wysiwyg/jquery.hotkeys.js"></script>
+    <script src="/myblogv1/Public/assets/js/editors/wysiwyg/prettify.js"></script>
+    <script src="/myblogv1/Public/assets/js/editors/wysiwyg/bootstrap-wysiwyg.js"></script>
+    <script src="/myblogv1/Public/assets/js/editors/summernote/summernote.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/myblogv1/Public/admin/static/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/myblogv1/Public/admin/static/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/myblogv1/Public/admin/static/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+    <script type="text/javascript" src="/myblogv1/Public/admin/static/upfile/js/vendor/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="/myblogv1/Public/admin/static/upfile/js/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="/myblogv1/Public/admin/static/upfile/js/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="/myblogv1/Public/admin/static/upfile/js/jquery.fileupload.js"></script>
+    <script src="/myblogv1/Public/admin/js/edit_blog.js"></script>
+    <script type="text/javascript">
+        /*加载ue插件*/
+        var ue = UE.getEditor('editor');
+        /*给文本框添加宽度*/
+        $("textarea").css("height","300px");
+    </script>
 
 </body>
 <!--  /Body -->

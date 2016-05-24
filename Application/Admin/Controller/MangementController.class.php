@@ -37,6 +37,30 @@ class MangementController extends Controller {
       *编辑博客
       */
     public function edit_blog(){
+      $id=$_GET['id'];
+      $blog=M('blog');
+      $find_blog=$blog->where("id=$id")->find();
+      $this->assign("blog_data",$find_blog);
+      $this->display();
+    }
+
+    /*
+     *修改博客
+     **/
+    public function submit_blog(){
+        $blog=M("blog");
+        $id=I("post.blog_id");
+        $data['blog_content']=I("post.blog_content");
+        $data['tags']=I("post.choice");
+        $data['blog_photo']=I("post.photourl");
+        $data['title']=I("post.title");
+        $data['update_time']=time();
+        $save_blog=$blog->where("id=$id")->data($data)->save();
+        if($save_blog){
+            $this->ajaxReturn(0);
+        }else{
+            $this->ajaxReturn(1);
+        }
 
     }
 
@@ -65,5 +89,4 @@ class MangementController extends Controller {
         }
 
     }
-
 }
