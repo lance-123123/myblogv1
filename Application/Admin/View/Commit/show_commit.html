@@ -30,42 +30,7 @@
                         </div>
                     </div>
                     <div class="widget-body">
-                        <div class="table-toolbar">
-                            <div class="panel-group accordion" id="accordion" style="margin-bottom: 8px;">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading ">
-                                        <h4 class="panel-title">
-                                            <a class="accordion-toggle collapsed" data-toggle="collapse"
-                                               data-parent="#accordion"
-                                               href="#collapseOne">
-                                                <i class="fa fa-search"></i> 高级搜索
-                                            </a>
-                                        </h4>
-                                    </div>
-
-                                    <div id="collapseOne" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                               <label>状态</label>
-                                                <select id="status">
-                                                    <option value="0">启用</option>
-                                                    <option value="1">禁用</option>
-                                                </select>
-                                            <button type="submit" class="btn btn-primary" style="margin-top: -5px" onclick="javascript:GetData();"><i class="fa fa-search"></i>搜索</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default btn-add"
-                                    data="{:U('admin/AddBlog/addblog')}"><i
-                                    class="fa fa-plus-square"></i> 新增
-                            </button>
-                            <button type="button" class="btn btn-default btn-edit"
-                                    data="{:U('admin/Mangement/edit_blog')}"><i
-                                    class="fa fa-pencil-square"></i> 编辑
-                            </button>
                             <button type="button" class="btn btn-default btn-del"
                                     data="{:U('admin/Mangement/delete_blog')}"><i
                                     class="fa fa-minus-square"></i> 删除
@@ -90,7 +55,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <input type="hidden" id="data" value="{:U('Mangement/get_blog_data')}">
+                        <input type="hidden" id="data" value="{:U('Commit/get_blog_data')}">
                     </div>
                 </div>
             </div>
@@ -99,5 +64,5 @@
 </block>
 
 <block name="script">
-    <script type="text/javascript" src="__JS__/manage_blog.js"></script>
+    <script type="text/javascript" src="__JS__/show_commit.js"></script>
 </block>

@@ -295,7 +295,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="menu-dropdown">
+                            <a href="<?php echo U('Commit/show_commit');?>" class="menu-dropdown">
                                 <span class="menu-text">留言管理</span>
                             </a>
                         </li>
@@ -423,7 +423,7 @@
                                     class="fa fa-pencil-square"></i> 编辑
                             </button>
                             <button type="button" class="btn btn-default btn-del"
-                                    data="<?php echo U('admin/stud/manage_delete');?>"><i
+                                    data="<?php echo U('admin/Mangement/delete_blog');?>"><i
                                     class="fa fa-minus-square"></i> 删除
                             </button>
                             <input type="hidden" id="change" value="<?php echo U('Admin/Mangement/change_status');?>">

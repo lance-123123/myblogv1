@@ -58,6 +58,7 @@ $("#form").submit(function(){
             success:function(data){
                 if (data== 0) {
                     bootMessage("success","亲！博客添加成功了！");
+                    window.location.href = $("#blog_path").val();
                 }else{
                     bootMessage("danger","亲！博客添加失败了！");
                 }

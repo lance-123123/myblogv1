@@ -337,10 +337,10 @@
                 <ul class="breadcrumb">
                     
     <li>
-        <i class="fa fa-home"></i>
-        <a href="#">首页</a>
+        <i class="fa fa-desktop"></i>
+        <a href="#">后台管理</a>
     </li>
-    <li class="active">网站访问量</li>
+    <li class="active">博客管理</li>
 
                 </ul>
             </div>
@@ -375,7 +375,7 @@
             <div class="col-xs-12 col-md-12">
                 <div class="widget">
                     <div class="widget-header ">
-                        <span class="widget-caption"><i class="fa fa-globe"></i>&nbsp;&nbsp;网站访问量</span>
+                        <span class="widget-caption"><i class="fa fa-desktop"></i>&nbsp;&nbsp;博客管理</span>
                         <div class="widget-buttons">
                             <a href="#" data-toggle="maximize">
                                 <i class="fa fa-expand"></i>
@@ -386,11 +386,35 @@
                         </div>
                     </div>
                     <div class="widget-body">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-del"
+                                    data="<?php echo U('admin/Mangement/delete_blog');?>"><i
+                                    class="fa fa-minus-square"></i> 删除
+                            </button>
+                            <input type="hidden" id="change" value="<?php echo U('Admin/Mangement/change_status');?>">
+                        </div>
 
+                        <div role="grid" id="simpledatatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+                            <table class="table table-striped table-bordered table-hover" id="simpledatatable">
+                                <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>标签</th>
+                                    <th>浏览量</th>
+                                    <th>点赞量</th>
+                                    <th>更新日期</th>
+                                    <th> 状态</th>
+                                    <th> 操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                        <input type="hidden" id="data" value="<?php echo U('Commit/get_blog_data');?>">
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -436,8 +460,8 @@
     });
    /* var root = '/myblogv1';
     var app = "/myblogv1/index.php";
-    var controll = "/myblogv1/index.php/Admin/Index";
-    var action = "/myblogv1/index.php/Admin/Index/index";
+    var controll = "/myblogv1/index.php/Admin/Commit";
+    var action = "/myblogv1/index.php/Admin/Commit/show_commit";
     var uploads = '/myblogv1/Uploads/';
     var open = '/myblogv1/Public';*/
   /*  $(function () {
@@ -461,8 +485,7 @@
 </script>
 
 
-   <!-- <script type="text/javascript" src="/myblogv1/Public/admin/js/index.js"></script>
-    <script type="text/javascript" src="/myblogv1/Public//Home/Data/js/jquery.tmpl.js"></script>-->
+    <script type="text/javascript" src="/myblogv1/Public/admin/js/show_commit.js"></script>
 
 </body>
 <!--  /Body -->

@@ -296,7 +296,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="menu-dropdown">
+                            <a href="<?php echo U('Commit/show_commit');?>" class="menu-dropdown">
                                 <span class="menu-text">留言管理</span>
                             </a>
                         </li>
@@ -388,6 +388,7 @@
                     </div>
                     <div class="widget-body">
                         <div class="row">
+                            <input type="hidden" value="<?php echo U('Mangement/manage_blog');?>" id="blog_path">
                             <input type="hidden" value="<?php echo U('AddBlog/submitphoto');?>" id="upimagurl">
                             <input type="hidden" value="/myblogv1/Uploads/" id="show_image">
                             <div class="col-lg-12 col-sm-12 col-xs-12">

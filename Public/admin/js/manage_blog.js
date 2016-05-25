@@ -115,7 +115,7 @@ function GetData() {
                 $(nRow).find("td:eq(5)").html("<a class='btn btn-info btn-xs' data='" + aData.id + "," + aData.status + "' onclick='change(this,event)'><i class='glyphicon glyphicon-ok'></i> 启用 </a>");
 
             }
-            $(nRow).find("td:last").html("<a class='btn btn-primary btn-xs' data='" + aData.id + "' onclick='eidt(this,event)'><i class='glyphicon glyphicon-pencil'></i> 编辑 </a>&nbsp;<a class='btn btn-danger btn-xs' data='" + aData.Id + "' onclick='del(this,event)'><i class='glyphicon glyphicon-trash'></i> 删除 </a>");
+            $(nRow).find("td:last").html("<a class='btn btn-primary btn-xs' data='" + aData.id + "' onclick='eidt(this,event)'><i class='glyphicon glyphicon-pencil'></i> 编辑 </a>&nbsp;<a class='btn btn-danger btn-xs' data='" + aData.id + "' onclick='del(this,event)'><i class='glyphicon glyphicon-trash'></i> 删除 </a>");
             return nRow;
         }
     });
@@ -182,16 +182,12 @@ function del(e, event) {
 }
 
 function deleteRow(ids) {
-    $.post($(".btn-del").attr("data"), {id: ids}, function (d) {
-        if (d.code == 0) {
-            if (ids.split(",").length > 1) {
-                bootMessage("success", d.message);
-            } else {
-                bootMessage("success", d.message);
-            }
+    $.post($(".btn-del").attr("data"), {id: ids}, function (data) {
+        if (data == 0) {
+            bootMessage("success", "亲！博客删除成功！");
             window.location.reload();
         } else {
-            bootMessage("danger", d.message);
+            bootMessage("danger", "亲！博客删除失败！");
         }
     }, "json");
 }

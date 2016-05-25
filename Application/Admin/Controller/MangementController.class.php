@@ -87,6 +87,22 @@ class MangementController extends Controller {
                 $this->ajaxReturn(2);//操作失败
             }
         }
+    }
 
+    /*
+     * 删除博客，可批量删除
+     * */
+    public function delete_blog(){
+        $blog=M("blog");
+        $ids = explode(",", I("id"));
+        $where["Id"] = array("in", $ids);
+        $data['update_time']=time();
+        $data['status']=2;
+        $delete_blog=$blog->where($where)->save($data);
+        if($delete_blog){
+            $this->ajaxReturn(0);//删除成功的情况下的返回值
+        }else{
+           $this->ajaxReturn(1);//删除失败的情况下的返回值
+        }
     }
 }
