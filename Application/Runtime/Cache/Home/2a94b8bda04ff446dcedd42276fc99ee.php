@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <head>
     <title>CPH BLOG</title>
-    <meta charset="utf-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <link rel="shortcut icon" type="image/x-icon" href="/myblogv1/Public/home/image/2.ico" />
     <!-- CSS Files -->
     <link rel="stylesheet" type="text/css" media="screen" href="/myblogv1/Public/home/plug/css/style.css">
