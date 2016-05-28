@@ -296,7 +296,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="menu-dropdown">
+                            <a href="<?php echo U('Commit/show_commit');?>" class="menu-dropdown">
                                 <span class="menu-text">留言管理</span>
                             </a>
                         </li>

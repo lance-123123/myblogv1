@@ -158,3 +158,1382 @@ NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be rem
 SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.000000s ]
 SQL: SELECT * FROM `blog` WHERE ( status=0 )  [ RunTime:0.000000s ]
 
+[ 2016-05-25T18:43:23+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.095005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-05-25T19:03:16+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-25T20:51:48+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.130008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.133008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.033002s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.164009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T20:52:48+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.058003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T20:59:26+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T21:04:52+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T21:05:20+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T21:07:28+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.098006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T21:16:59+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.163009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T21:18:15+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.204011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.205012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T21:18:43+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T21:20:39+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T21:21:17+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T21:25:23+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T21:31:35+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T21:32:21+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T21:33:58+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-05-25T21:39:09+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.031002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031002s ]
+
+[ 2016-05-25T21:39:35+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T21:39:54+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T21:54:01+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T21:54:20+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-05-25T21:54:33+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T21:54:53+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T21:57:54+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-25T21:59:12+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T21:59:56+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.005000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-05-25T22:00:35+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:01:14+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:03:16+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:04:18+08:00 ] ::1 /myblogv1/index.php/Admin/index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.145008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T22:04:18+08:00 ] ::1 /myblogv1/index.php/Admin/index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:04:23+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.143008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T22:04:24+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2016-05-25T22:05:27+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.057004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-25T22:05:37+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/submitphoto.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+
+[ 2016-05-25T22:06:02+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/submitblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.180010s ]
+SQL: INSERT INTO `blog` (`title`,`blog_photo`,`blog_content`,`tags`,`public_date`,`update_time`) VALUES ('冬天','Picture/2016-05-25/5745b1312de16.jpg','&lt;p&gt;燕子们偷偷地衔走了温暖，叶子们悄悄地离开了枝头，我猛然发现，&lt;a href=&quot;http://dongtian.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;冬&lt;/a&gt;天来了。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://dongtian.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;冬天&lt;/a&gt;真的来了。这庄严的冬天，挡住了绿色的洪流，驱散了花的芬芳，任皑皑白&lt;a href=&quot;http://www.sanwen.net/shige/xue/&quot; target=&quot;_blank&quot;&gt;雪&lt;/a&gt;泛 &amp;nbsp; &amp;nbsp; &amp;nbsp; 滥在平原、山坳。于是，土地只好带着安静，牵着阳光，静静地倾听冬的唱响。&lt;/p&gt;&lt;p&gt;茫茫旷野，白雪掩盖了片片鹅黄；干枯的叶脉，承载不了彩虹的&lt;a href=&quot;http://meng.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;梦&lt;/a&gt;；冰冷的风儿，述说着雪花儿的晶莹；枝条的液汁，涌动着&lt;a href=&quot;http://chuntian.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;春&lt;/a&gt;天的&lt;a href=&quot;http://meng.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;梦想&lt;/a&gt;。&lt;/p&gt;&lt;p&gt;我驻足于冬天的土地上，窥视阳光融化雪花儿的过程；聆听&lt;a href=&quot;http://caodi.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;小草&lt;/a&gt;们的窃窃私语；揣摩着泥土中小虫们的嬉戏。树林里，脉脉阳光射下斑驳的投影。我于缭乱中回首南望，似曾听见遥远的地方有&lt;a href=&quot;http://zuowen.sanwen.net/z/112975&quot; target=&quot;_blank&quot;&gt;鸟&lt;/a&gt;儿在歌唱。&lt;/p&gt;&lt;p&gt;冬天，朴素得像一幅黑白的水墨画，线条简单，却蕴藏着&lt;a href=&quot;http://shengming.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;生命&lt;/a&gt;的真谛。&lt;/p&gt;&lt;p&gt;冬天，就是这样一个庄严而美丽的冬天，让我以愉悦的&lt;a href=&quot;http://www.sanwen.net/rizhi/xinqing/&quot; target=&quot;_blank&quot;&gt;心情&lt;/a&gt;，走进山野，走进河堤，走进村庄。&lt;span style=&quot;position:relative;left:-100000px;&quot;&gt;( &lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;文章&lt;/a&gt;&lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;阅读&lt;/a&gt;网：www.sanwen.net )&lt;/span&gt;&lt;/p&gt;&lt;p&gt;在山野，我用小心翼翼的双脚，去探寻野兔的足迹；在密林，我用贪婪的行为，惊醒了山鸡的梦呓；在河边，我燃一堆篝火，不怀好意地注视着河里那酣睡的鱼……&lt;/p&gt;&lt;p&gt;我拥一缕喜悦，挽几许新奇，走进久别的村庄。&lt;/p&gt;&lt;p&gt;六角的雪花儿白了街道，白了行人，白了农舍。也白了人的&lt;a href=&quot;http://xinling.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;心灵&lt;/a&gt;。&lt;/p&gt;&lt;p&gt;一缕缕袅袅而飘的炊烟，点缀着瑟瑟而蓝的天空；囤积如黄金一样的粮仓，在每一户的院落炫耀着辉煌；屋檐下的串串红辣椒，在燃烧着火一样的日子；院落\n的上空，腾腾缭绕的热气里，飘出的农家饭菜的清香，馋的我口水直淌；不知谁家的老者，用浓烈的酒醇，将那崭新的瓦房都醉得飘飘晃晃；小贩们那&lt;a href=&quot;http://zhizhuo.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;执着&lt;/a&gt;的吆喝声，挤满了雪白而狭窄的街道；讨价还价的喊声，引来一阵鸡猪鸭鹅的欢叫……&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://ye.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;夜&lt;/a&gt;幕降临的时候，在夜半晕黄的灯光里，每一户热乎乎的土炕上，或许都在上演一番对&lt;a href=&quot;http://chuntian.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;春天&lt;/a&gt;不同的遐想吧。&lt;/p&gt;&lt;p&gt;这就是冬天，令人欢悦的冬天。令人魂牵梦萦的冬天。积蓄智慧和充满希望的冬天！&lt;/p&gt;&lt;p&gt;冬天，是一首&lt;a href=&quot;http://www.sanwen.net/sanwen/shuqing/&quot; target=&quot;_blank&quot;&gt;抒情&lt;/a&gt;诗，抒发着人们对春的萌动。在这美妙的诗行里，无时无刻不流露出，人们对&lt;a href=&quot;http://www.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;美好&lt;/a&gt;&lt;a href=&quot;http://www.sanwen.net/suibi/shenghuo/&quot; target=&quot;_blank&quot;&gt;生活&lt;/a&gt;的期盼。&lt;/p&gt;&lt;p&gt;冬天，孕育着生机，也孕育着希望。让我们在大地复苏时，用冬天孕育出来的笔墨，去书写那美丽的绿色篇章吧！&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','散文,阅读,感想',1464185161,1464185161) [ RunTime:0.954055s ]
+
+[ 2016-05-25T22:06:03+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.091005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-05-25T22:06:04+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.106006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T22:06:07+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/get_blog_data.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `blog` WHERE ( status=0 )  [ RunTime:0.039002s ]
+
+[ 2016-05-25T22:06:21+08:00 ] ::1 /myblogv1/index.php/admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2016-05-25T22:06:22+08:00 ] ::1 /myblogv1/index.php/admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.003000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.077004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-05-25T22:07:17+08:00 ] ::1 /myblogv1/index.php/admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-05-25T22:07:31+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/submitphoto.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+
+[ 2016-05-25T22:08:05+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/submitblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.010000s ]
+SQL: INSERT INTO `blog` (`title`,`blog_photo`,`blog_content`,`tags`,`public_date`,`update_time`) VALUES ('遗落的旅行','Picture/2016-05-25/5745b1a3ebb73.jpg','&lt;p&gt;我喜欢一个人旅行，喜欢去远离城市的安静村落。城市里节奏太快，用尽全力去跟上这个灯&lt;/p&gt;&lt;p&gt;红酒绿快节奏的&lt;a href=&quot;http://www.sanwen.net/suibi/shenghuo/&quot; target=&quot;_blank&quot;&gt;生活&lt;/a&gt;，当一个人拖着疲惫的身体回到家时，才发现&lt;a href=&quot;http://xiangxinziji.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;自己&lt;/a&gt;节奏太快&lt;a href=&quot;http://linghun.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;灵魂&lt;/a&gt;没有跟&lt;/p&gt;&lt;p&gt;上，成了一副皮囊。我想去找寻那遗失的自己，找寻那落下在某个角落的灵魂。&lt;/p&gt;&lt;p&gt;这次我寻找到一个被遗忘的的古村落黔阳古城，那里没有凤凰，丽江的商业化，也很少有人&lt;span style=&quot;position:relative;left:-100000px;&quot;&gt;( &lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;文章&lt;/a&gt;&lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;阅读&lt;/a&gt;网：www.sanwen.net )&lt;/span&gt;&lt;/p&gt;&lt;p&gt;知道，有的只是风&lt;a href=&quot;http://www.sanwen.net/sanwen/yu/&quot; target=&quot;_blank&quot;&gt;雨&lt;/a&gt;留下的痕迹，再自然不过了。我每当去到一个地方进行短暂旅行的时候&lt;/p&gt;&lt;p&gt;，总会有人会问道，你一个人？我回答：对我一个人。这次也不列外。为什么不可以一个人&lt;/p&gt;&lt;p&gt;？谁规定出去游玩必须三五成群？一个人对就一个人，想去哪里可以去哪里，想吃什么可以&lt;/p&gt;&lt;p&gt;吃什么，没有思想负担，安静的发呆，安静的看书，安静的做着自己想做的事情不是很好吗&lt;/p&gt;&lt;p&gt;？&lt;/p&gt;&lt;p&gt;数着步子走在青石板街，没有商铺，没有很多游客，偶尔可以见到一两位。想必他们也是来&lt;/p&gt;&lt;p&gt;古城里寻找一份&lt;a href=&quot;http://xinling.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;心灵&lt;/a&gt;归宿的吧。这里有很多条街，很多巷子，每一条巷子，每一条街都有属&lt;/p&gt;&lt;p&gt;于的自己名字，大多数都是明清时期留下来的。古城并不热闹，偶有几个商铺早早的就歇业&lt;/p&gt;&lt;p&gt;关门了。以至于想找家吃的商铺有很难寻觅。高高的屋檐都长满了青草，一群高傲的青草，&lt;/p&gt;&lt;p&gt;我需要抬头去看它。随处可见历经沧桑&lt;a href=&quot;http://www.sanwen.net/suibi/suiyue/&quot; target=&quot;_blank&quot;&gt;岁月&lt;/a&gt;的房屋，每一间都是一本厚厚的&lt;a href=&quot;http://tonghua.sanwen.net/&quot; target=&quot;_blank&quot;&gt;故事&lt;/a&gt;。我也围着&lt;/p&gt;&lt;p&gt;当地一位白胡子老头打听这里的&lt;a href=&quot;http://cengjing.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;曾经&lt;/a&gt;故事。&lt;/p&gt;&lt;p&gt;在古城边上遇见了一位老师叫feng,feng就住在古城的边上是本地人，对古城再熟悉不过了。&lt;/p&gt;&lt;p&gt;所以并不想带我去古城转悠，对于她来说，古城的安静安逸已经是她的自身了。她就是像古&lt;/p&gt;&lt;p&gt;城一样的&lt;a href=&quot;http://nvren.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;女子&lt;/a&gt;。在她身边我明显的感觉我的心有多浮躁。她带着我去相思湖散步，听到一片&lt;/p&gt;&lt;p&gt;蛙声，想想自己&lt;a href=&quot;http://www.sanwen.net/shige/tongnian/&quot; target=&quot;_blank&quot;&gt;童年&lt;/a&gt;对这蛙声是再熟悉不过了，可是进入城市后忙于&lt;a href=&quot;http://www.sanwen.net/gongzuozongjie.html&quot; target=&quot;_blank&quot;&gt;工作&lt;/a&gt;，却没再听到过这&lt;/p&gt;&lt;p&gt;欢快的蛙声，我停下脚步与feng一起凝听这一曲高歌。feng说：再过段&lt;a href=&quot;http://shijian.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;时间&lt;/a&gt;就有萤火虫了。&lt;/p&gt;&lt;p&gt;我的&lt;a href=&quot;http://huiyi.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;记忆&lt;/a&gt;回到了小时候，那时候&lt;a href=&quot;http://xiatian.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;夏天&lt;/a&gt;用一个玻璃瓶子去抓萤火虫，放在瓶子里是多么&lt;a href=&quot;http://zuowen.sanwen.net/z/219426-kuaile&quot; target=&quot;_blank&quot;&gt;快乐&lt;/a&gt;的&lt;/p&gt;&lt;p&gt;事情。想想现在大部分的时间就是对着电脑、手机、和一堆工作，快乐的事情莫过于发工资&lt;/p&gt;&lt;p&gt;，&lt;a href=&quot;http://www.sanwen.net/sanwen/shanggan/&quot; target=&quot;_blank&quot;&gt;悲伤&lt;/a&gt;的事情莫过于这个月还没到月底，工资就没了。&lt;/p&gt;&lt;p&gt;feng走了，我还是一个人。&lt;/p&gt;&lt;p&gt;一座宁静而安逸的古城，不想过多的打扰，却对它有一种独有的不舍情怀。就此一别，他日再见。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','散文,唯美',1464185283,1464185283) [ RunTime:1.554088s ]
+
+[ 2016-05-25T22:08:05+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.064003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-05-25T22:08:06+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.076005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T22:08:11+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/get_blog_data.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.221012s ]
+SQL: SELECT * FROM `blog` WHERE ( status=0 )  [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:08:15+08:00 ] ::1 /myblogv1/index.php/admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.313018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.314018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2016-05-25T22:08:16+08:00 ] ::1 /myblogv1/index.php/admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.062003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:08:51+08:00 ] ::1 /myblogv1/index.php/admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:09:12+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/submitphoto.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+
+[ 2016-05-25T22:09:29+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/submitblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.010001s ]
+SQL: INSERT INTO `blog` (`title`,`blog_photo`,`blog_content`,`tags`,`public_date`,`update_time`) VALUES ('无论我们遇见谁，都是缘','Picture/2016-05-25/5745b2084db17.jpg','&lt;p&gt;无论我们遇见谁，都是缘，应当珍惜，因为&lt;a href=&quot;http://yuanfen.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;缘分&lt;/a&gt;不长，今世相遇，来世也许不见。善缘恶缘都是缘，缘尽便散。一&lt;a href=&quot;http://rensheng.sanwen.net/&quot; target=&quot;_blank&quot;&gt;人生&lt;/a&gt;，一段缘。&lt;/p&gt;&lt;p&gt;刹那的欢喜，是百千年的寻觅，一世又一世，谁还会记得！拨动佛珠，清泪滴落，天地之间，何处相逢。远山青黛，梵音袅袅，一座古庙，几许钟声。磕一&lt;a href=&quot;http://ye.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;夜&lt;/a&gt;长头，贴着温柔，那一世相约，欠了谁的&lt;a href=&quot;http://chengnuo.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;诺言&lt;/a&gt;。彼岸花开，我在此岸驻足，烙印的魂魄，飞过千年，寻着轮回的足迹，忘却身在红尘。一声木鱼，一声佛号，披上袈裟，有一丝丝念，繁华落尽，终归离去。莲花池边，挂起经幡，转山转水转佛塔，只为遇见。魂牵&lt;a href=&quot;http://meng.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;梦&lt;/a&gt;萦的前尘，终归一粒尘沙，随风起落，随叶飘零。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.sanwen.net/sanwen/shanggan/&quot; target=&quot;_blank&quot;&gt;悲伤&lt;/a&gt;或是欢喜，都是一种心念，如尘埃，若清风，入心不染尘。茫茫山水，也只不过一场过客，前世今世的缘分，是一场结缘了缘。内心若是清静的，不驻留痕迹，风花&lt;a href=&quot;http://www.sanwen.net/shige/xue/&quot; target=&quot;_blank&quot;&gt;雪&lt;/a&gt;月，花开花落，烟火情长，最后也要皈依于平静。晨钟暮鼓，素衣青灯，站在此岸，虔诚超度，若来，悄悄的来，若去，也悄悄的去。&lt;/p&gt;&lt;p&gt;当有一天我们不见，则&lt;a href=&quot;http://yongheng.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;永远&lt;/a&gt;不见，来世又怎会遇见，请让我好好珍惜。人间有&lt;a href=&quot;http://www.sanwen8.cn/sanwen/love/&quot; target=&quot;_blank&quot;&gt;爱&lt;/a&gt;，谁可以&lt;a href=&quot;http://yongheng.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;永恒&lt;/a&gt;？我好想，日月不变，时光停止，让今生的缘，无有起落，无有聚散。多么想，就这样不老；多么想，我们永远存在，守一颗不变的心，如风对花儿的呢喃，生生世世，不曾改变。&lt;/p&gt;&lt;p&gt;人生多苦恼，&lt;a href=&quot;http://www.sanwen.net/suibi/shenghuo/&quot; target=&quot;_blank&quot;&gt;生活&lt;/a&gt;几奔波。&lt;a href=&quot;http://shengming.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;生命&lt;/a&gt;长河里，我们没有权利停留，顺水逐流，不知飘向哪里，结果如何，更无法预知。&lt;a href=&quot;http://ganen.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;感恩&lt;/a&gt;有缘遇见，黑暗中一盏明灯，指引方向，欢喜无限。身在红尘，心在净土，无论遇见谁，都是今生注定要遇见的，多一些付出，多一些慈悲，因为来世，谁还可以遇见！&lt;/p&gt;&lt;p&gt;光阴无情，我们总是无法拥有太多，来不及去做，已经匆匆流逝，余生，还有多少时光。心，很痛；泪，很酸，一种感触在内心翻腾。我不知道我还能在尘世\n停留多久，我不知道我还可以为你做些什么，真的舍不得，舍不得这一世的情意，那么真诚，那么慈悲。不管我在还是不在，爱都一直在。&lt;span style=&quot;position:relative;left:-100000px;&quot;&gt;( &lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;文章&lt;/a&gt;&lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;阅读&lt;/a&gt;网：www.sanwen.net )&lt;/span&gt;&lt;/p&gt;&lt;p&gt;修行路上艰难，谁，穿越情愫，心境依旧！思几许，泪几钵，路过的浮生，不过一朵烟花般长短。&lt;a href=&quot;http://zhizhuo.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;执着&lt;/a&gt;的人，娑婆尘世，几番沉浮；回归的人，马不停蹄，信誓旦旦。万水千山，沧海桑田，没有刹那的永恒，只有不停的前行。&lt;/p&gt;&lt;p&gt;忽然有些&lt;a href=&quot;http://www.sanwen.net/sanwen/shanggan/&quot; target=&quot;_blank&quot;&gt;感伤&lt;/a&gt;，一种滋味蔓延心底，或许是四季轮回，或许是繁华骤变，生命，总是无法永恒。寻求一种圆满，祈求一份情缘，刹那间聚散，谁还曾是谁的谁！见与不见，都是一种未来演变成&lt;a href=&quot;http://cengjing.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;过去&lt;/a&gt;，最后烟消云散，留下&lt;a href=&quot;http://huiyi.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;回忆&lt;/a&gt;也将慢慢淡化，痕迹，再无处可寻。心念千翻起伏，泪水潮湿眼眸，永远无法驻留的当下，当下又该怎样珍惜。&lt;/p&gt;&lt;p&gt;我想，我终究是属于山水间的，那一树，一叶，一味道，都是那么亲切，那么可爱，仿若，我们是一体，从未离开过。烦忧的心，被山水间的气息熏染，红尘\n的我，被大自然洗礼，卸下沉重的枷锁，归还一身轻松。内心真正的欢喜，如一幅简单的山水画，只是几笔勾描，便可以描绘出自然的清新雅韵，那么圣洁，那么安\n静，没有烟火的沾染，只有一片素心，虔诚的双眸，颔首微垂。&lt;/p&gt;&lt;p&gt;纵然是苍凉的世界，有一颗真心，也会温暖，不与谁相遇，只是一个人走过。绝世烟火，在彼岸绚丽，情与缘，交错而寂灭。终还要，归于山水，禅心打坐，究竟圆满。&lt;/p&gt;&lt;p&gt;找到&lt;a href=&quot;http://xiangxinziji.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;自己&lt;/a&gt;的归宿，才是人生真正的终点。红尘喧嚷，繁华迷乱，一颗心随四季轮回而转，清净又杂乱，起伏不定，浮华无味。一程路，终究走下去，途径所有只不过花开花落，刹那聚灭，谁可驻足。忽如一杯茶，安静沉淀&lt;a href=&quot;http://www.sanwen.net/suibi/suiyue/&quot; target=&quot;_blank&quot;&gt;岁月&lt;/a&gt;一偶，如山水间的草木，如清风拂过的青石，如如不动，心自开阔，来去自在，念而不念。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','散文,缘分,唯美',1464185368,1464185368) [ RunTime:0.242014s ]
+
+[ 2016-05-25T22:09:29+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-05-25T22:09:30+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.003001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.119007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T22:09:33+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/get_blog_data.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `blog` WHERE ( status=0 )  [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:15:28+08:00 ] ::1 /myblogv1/index.php/admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.009000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.009000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.563032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.563032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:15:28+08:00 ] ::1 /myblogv1/index.php/admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:15:50+08:00 ] ::1 /myblogv1/index.php/admin/AddBlog/addblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:15:56+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/submitphoto.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+
+[ 2016-05-25T22:16:35+08:00 ] ::1 /myblogv1/index.php/Admin/AddBlog/submitblog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.005001s ]
+SQL: INSERT INTO `blog` (`title`,`blog_photo`,`blog_content`,`tags`,`public_date`,`update_time`,`blog_newsletter`) VALUES ('暴风雨','Picture/2016-05-25/5745b39cd921b.jpg','&lt;p&gt;狂吼了两天的大风丝毫没有停歇的意思，今天更加的变本加厉起来，带着尖厉的嚎叫，挟着灰尘，裹着扫落的树叶，肆无忌惮地像要摧毁一切。&lt;/p&gt;&lt;p&gt;狂风夹着骤雨，肆虐着大地。河水前呼后拥荡起来了，大树左歪右斜摇起来了，茅草忽上忽下抖起来了。蓝天失色，乌云翻滚，积压头顶, \n仿佛只须伸一伸手就能触摸得到，大有山雨欲来风满楼之势。果不其然，瞬间，瓢泼大雨在天地间织成大珍珠似的雨帘，哗啦啦的倾泻而下，铺天盖地，斜斜地扫过\n来打在窗户上，发出很钝的啪啪的声响，然后顺着玻璃滑下来，划出一道湿淋淋的印痕。雨注如竹，在地面上冲起一朵朵小花，盛开的雨花重重叠叠。整个天地一片\n白茫茫，看不清雨外的世界。不敢想象，是谁拉倒了江河，碰翻了湖泊。乌云裹着狂风，狂风夹杂着暴雨，大地在颤抖，房屋在摇晃。疯狂着，张扬着，毫无顾忌\n的，狂扫一切事物宣泄着&lt;a href=&quot;http://xiangxinziji.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;自己&lt;/a&gt;的\n力量，势不可挡，威力无穷。植物在挣扎，拼命抓住大地；动物在雨中飞奔，逃离大雨的侵袭。风越刮越大，大雨越来越疯狂，黑沉沉的天就像要崩塌下来。狂风追\n着暴雨，暴雨赶着狂风，整个天地都处在雨水之中。狂风卷着暴雨像无数条鞭子，狠命地往房子上、树木上抽打。乌云，肆无忌惮的翻卷腾挪，毫无顾忌地聚散合\n离，聚集着千军万马，浩浩荡荡；风，刮起个云天雾地，席卷这万里长空，卷起这千里浪涌，震撼这波涛澜就；雨，浇出一个淋漓尽致，下出一个畅酣淋漓。&lt;/p&gt;&lt;p&gt;整整下了一个上午，风沉默了，雨也许累了，压在大地上的乌云终于渐渐地飘了起来，雨也开始稀疏，天渐渐的开始亮了起来，&lt;a href=&quot;http://zuowen.sanwen.net/z/112975&quot; target=&quot;_blank&quot;&gt;鸟&lt;/a&gt;儿又开始鸣叫，几只燕子也在高空中欢快的自在的飞翔，崭新的农舍，碧绿的树木，在我的眼前呈现着着，我想此时大地万物都应该是&lt;a href=&quot;http://zuowen.sanwen.net/z/219426-kuaile&quot; target=&quot;_blank&quot;&gt;快乐&lt;/a&gt;的，就象我此时宁静快乐的&lt;a href=&quot;http://www.sanwen.net/rizhi/xinqing/&quot; target=&quot;_blank&quot;&gt;心情&lt;/a&gt;！\n干渴的土地湿润了，沟渠也灌满了水，路面清洗如镜。时而露出的蓝天，显得更加蔚蓝和清新。时而又乌云滚滚东去，雨间歇的飘落。突然一声大雷，震得房屋颤\n抖，世界便静寂了，只听见哗哗的雨声和一阵阵有气无力的风声，地下的积水正在向低处汇合。我闲步在积水处，以一种蔑视的目光仰头看看天空，下吧，暴风雨，\n猛烈地下吧，尽管你再来势汹汹，即便你再狂妄至极，即便你再满世界咆哮，即便你再疯狂肆虐，乌云是遮不住太阳的，我&lt;a href=&quot;http://xiangxinziji.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;相信&lt;/a&gt;，万丈光芒会把你们顿时彻底的驱散。&lt;/p&gt;&lt;p&gt;天开始放晴，原野更亮了，绿叶在流淌着&lt;a href=&quot;http://shengming.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;生命&lt;/a&gt;的信息。空气是那样的清新，使人们忘记了刚才恐怖的一幕，在贪婪的呼吸着。只有那被狂风暴雨折断的树枝横七竖八的躺在地上，横躺在水沟上，记下了大自然的威力。&lt;span style=&quot;position:relative;left:-100000px;&quot;&gt;( &lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;文章&lt;/a&gt;&lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;阅读&lt;/a&gt;网：www.sanwen.net )&lt;/span&gt;&lt;/p&gt;&lt;p&gt;傍晚，太阳露出了笑脸。路上行人开始络绎不绝，屋檐还在不断滴着水滴，落在地上的声音节奏单一、柔和。狂风没了踪影，雨早已逃遁。眼前的整个世界充满着无限生机，明天定会是个风清日丽的好天气，风雨过后是彩虹，我期待着！&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','散文,唯美',1464185795,1464185795,'&lt;p&gt;狂吼了两天的大风丝毫没有停歇的意思，今天更加的变本加厉起来，带着尖厉的嚎叫，挟着灰尘，裹着扫落的树叶，肆无忌惮地像要摧毁一切。&lt;/p&gt;&lt;p&gt;狂风夹着骤雨，肆虐着大地。河水前呼后拥荡起来了，大树左歪右斜摇起来了，茅草忽上忽下抖起来了。蓝天失色，乌云翻滚，积压头') [ RunTime:0.077004s ]
+
+[ 2016-05-25T22:16:35+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:16:36+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:16:38+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/get_blog_data.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `blog` WHERE ( status=0 )  [ RunTime:0.301017s ]
+
+[ 2016-05-25T22:16:38+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:24:34+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `blog` ORDER BY public_date LIMIT 5   [ RunTime:0.057003s ]
+
+[ 2016-05-25T22:26:31+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `blog` ORDER BY public_date LIMIT 5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T22:28:04+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `blog` ORDER BY browsenumber LIMIT 5   [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T22:28:47+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `blog` ORDER BY browsenumber LIMIT 5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.056004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-25T22:42:37+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `blog` ORDER BY browsenumber LIMIT 5   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:44:45+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `blog` ORDER BY browsenumber LIMIT 5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.076004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-05-25T22:44:50+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `blog` ORDER BY browsenumber LIMIT 5   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:45:56+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `blog` ORDER BY browsenumber LIMIT 5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-25T22:46:31+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.010001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.027001s ]
+SQL: SELECT * FROM `blog` ORDER BY browsenumber LIMIT 5   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-05-25T22:48:09+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.125007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.201011s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `blog` ORDER BY browsenumber LIMIT 5   [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-05-25T22:48:28+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-25T22:48:30+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:48:33+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/get_blog_data.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `blog` WHERE ( status=0 )  [ RunTime:0.002000s ]
+
+[ 2016-05-25T22:48:36+08:00 ] ::1 /myblogv1/index.php/admin/Mangement/edit_blog.html?id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `blog` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.134007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:48:37+08:00 ] ::1 /myblogv1/index.php/admin/Mangement/edit_blog.html?id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `blog` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.011001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-25T22:48:45+08:00 ] ::1 /myblogv1/index.php/admin/Mangement/edit_blog.html?id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `blog` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-25T22:48:47+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/submit_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.009001s ]
+SQL: UPDATE `blog` SET `blog_content`='&lt;p&gt;我喜欢一个人旅行，喜欢去远离城市的安静村落。城市里节奏太快，用尽全力去跟上这个灯&lt;/p&gt;&lt;p&gt;红酒绿快节奏的&lt;a href=&quot;http://www.sanwen.net/suibi/shenghuo/&quot; target=&quot;_blank&quot;&gt;生活&lt;/a&gt;，当一个人拖着疲惫的身体回到家时，才发现&lt;a href=&quot;http://xiangxinziji.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;自己&lt;/a&gt;节奏太快&lt;a href=&quot;http://linghun.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;灵魂&lt;/a&gt;没有跟&lt;/p&gt;&lt;p&gt;上，成了一副皮囊。我想去找寻那遗失的自己，找寻那落下在某个角落的灵魂。&lt;/p&gt;&lt;p&gt;这次我寻找到一个被遗忘的的古村落黔阳古城，那里没有凤凰，丽江的商业化，也很少有人&lt;span style=&quot;position:relative;left:-100000px;&quot;&gt;( &lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;文章&lt;/a&gt;&lt;a href=&quot;http://www.sanwen.net/&quot; target=&quot;_blank&quot;&gt;阅读&lt;/a&gt;网：www.sanwen.net )&lt;/span&gt;&lt;/p&gt;&lt;p&gt;知道，有的只是风&lt;a href=&quot;http://www.sanwen.net/sanwen/yu/&quot; target=&quot;_blank&quot;&gt;雨&lt;/a&gt;留下的痕迹，再自然不过了。我每当去到一个地方进行短暂旅行的时候&lt;/p&gt;&lt;p&gt;，总会有人会问道，你一个人？我回答：对我一个人。这次也不列外。为什么不可以一个人&lt;/p&gt;&lt;p&gt;？谁规定出去游玩必须三五成群？一个人对就一个人，想去哪里可以去哪里，想吃什么可以&lt;/p&gt;&lt;p&gt;吃什么，没有思想负担，安静的发呆，安静的看书，安静的做着自己想做的事情不是很好吗&lt;/p&gt;&lt;p&gt;？&lt;/p&gt;&lt;p&gt;数着步子走在青石板街，没有商铺，没有很多游客，偶尔可以见到一两位。想必他们也是来&lt;/p&gt;&lt;p&gt;古城里寻找一份&lt;a href=&quot;http://xinling.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;心灵&lt;/a&gt;归宿的吧。这里有很多条街，很多巷子，每一条巷子，每一条街都有属&lt;/p&gt;&lt;p&gt;于的自己名字，大多数都是明清时期留下来的。古城并不热闹，偶有几个商铺早早的就歇业&lt;/p&gt;&lt;p&gt;关门了。以至于想找家吃的商铺有很难寻觅。高高的屋檐都长满了青草，一群高傲的青草，&lt;/p&gt;&lt;p&gt;我需要抬头去看它。随处可见历经沧桑&lt;a href=&quot;http://www.sanwen.net/suibi/suiyue/&quot; target=&quot;_blank&quot;&gt;岁月&lt;/a&gt;的房屋，每一间都是一本厚厚的&lt;a href=&quot;http://tonghua.sanwen.net/&quot; target=&quot;_blank&quot;&gt;故事&lt;/a&gt;。我也围着&lt;/p&gt;&lt;p&gt;当地一位白胡子老头打听这里的&lt;a href=&quot;http://cengjing.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;曾经&lt;/a&gt;故事。&lt;/p&gt;&lt;p&gt;在古城边上遇见了一位老师叫feng,feng就住在古城的边上是本地人，对古城再熟悉不过了。&lt;/p&gt;&lt;p&gt;所以并不想带我去古城转悠，对于她来说，古城的安静安逸已经是她的自身了。她就是像古&lt;/p&gt;&lt;p&gt;城一样的&lt;a href=&quot;http://nvren.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;女子&lt;/a&gt;。在她身边我明显的感觉我的心有多浮躁。她带着我去相思湖散步，听到一片&lt;/p&gt;&lt;p&gt;蛙声，想想自己&lt;a href=&quot;http://www.sanwen.net/shige/tongnian/&quot; target=&quot;_blank&quot;&gt;童年&lt;/a&gt;对这蛙声是再熟悉不过了，可是进入城市后忙于&lt;a href=&quot;http://www.sanwen.net/gongzuozongjie.html&quot; target=&quot;_blank&quot;&gt;工作&lt;/a&gt;，却没再听到过这&lt;/p&gt;&lt;p&gt;欢快的蛙声，我停下脚步与feng一起凝听这一曲高歌。feng说：再过段&lt;a href=&quot;http://shijian.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;时间&lt;/a&gt;就有萤火虫了。&lt;/p&gt;&lt;p&gt;我的&lt;a href=&quot;http://huiyi.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;记忆&lt;/a&gt;回到了小时候，那时候&lt;a href=&quot;http://xiatian.sanwen8.cn/&quot; target=&quot;_blank&quot;&gt;夏天&lt;/a&gt;用一个玻璃瓶子去抓萤火虫，放在瓶子里是多么&lt;a href=&quot;http://zuowen.sanwen.net/z/219426-kuaile&quot; target=&quot;_blank&quot;&gt;快乐&lt;/a&gt;的&lt;/p&gt;&lt;p&gt;事情。想想现在大部分的时间就是对着电脑、手机、和一堆工作，快乐的事情莫过于发工资&lt;/p&gt;&lt;p&gt;，&lt;a href=&quot;http://www.sanwen.net/sanwen/shanggan/&quot; target=&quot;_blank&quot;&gt;悲伤&lt;/a&gt;的事情莫过于这个月还没到月底，工资就没了。&lt;/p&gt;&lt;p&gt;feng走了，我还是一个人。&lt;/p&gt;&lt;p&gt;一座宁静而安逸的古城，不想过多的打扰，却对它有一种独有的不舍情怀。就此一别，他日再见。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`tags`='散文,唯美',`blog_photo`='Picture/2016-05-25/5745b1a3ebb73.jpg',`title`='遗落的旅行',`update_time`=1464187727,`blog_newsletter`='&lt;p&gt;我喜欢一个人旅行，喜欢去远离城市的安静村落。城市里节奏太快，用尽全力去跟上这个灯&lt;/p&gt;&' WHERE ( id=11 ) [ RunTime:0.181010s ]
+
+[ 2016-05-25T22:48:47+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-25T22:48:48+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/manage_blog.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/loading.html): failed to open stream: No such file or directory E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-25T22:48:53+08:00 ] ::1 /myblogv1/index.php/Admin/Mangement/get_blog_data.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `blog` WHERE ( status=0 )  [ RunTime:0.001001s ]
+
+[ 2016-05-25T22:48:59+08:00 ] ::1 /myblogv1/index.php/Home
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\myblogv1\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `blog` ORDER BY browsenumber LIMIT 5   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.178011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

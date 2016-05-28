@@ -55,6 +55,7 @@ class MangementController extends Controller {
         $data['blog_photo']=I("post.photourl");
         $data['title']=I("post.title");
         $data['update_time']=time();
+        $data['blog_newsletter']=mb_substr($data['blog_content'],0,100,'utf-8');
         $save_blog=$blog->where("id=$id")->data($data)->save();
         if($save_blog){
             $this->ajaxReturn(0);

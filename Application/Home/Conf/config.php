@@ -2,12 +2,13 @@
 return array(
 	//'配置项'=>'配置值'
 	'TMPL_PARSE_STRING'  =>  array(
-								'__STATIC__' => __ROOT__ . '/Public/Admin/static',
-							 	'__JS__'     =>  __ROOT__.'/Public/Admin/js',
-							 	'__CSS__'     => __ROOT__. '/Public/Admin/css', 
-							 	'__IMG__'    => __ROOT__.'/Public/Admin/image',
+								'__STATIC__' => __ROOT__ . '/Public/home/static',
+							 	'__JS__'     =>  __ROOT__.'/Public/home/js',
+							 	'__CSS__'     => __ROOT__. '/Public/home/css',
+							 	'__IMG__'    => __ROOT__.'/Public/home/image',
+	                            '__PLUG__'   =>__ROOT__.'/Public/home/plug',
                                 '__UPLOADS__'    => __ROOT__.'/Uploads/'
 						     ),
-    'DEFAULT_CONTROLLER'    =>  'Public', // 默认控制器名称
-    'DEFAULT_ACTION'        =>  'login', // 默认操作名称
+    'DEFAULT_CONTROLLER'    =>  'Index', // 默认控制器名称
+    'DEFAULT_ACTION'        =>  'index', // 默认操作名称
 );

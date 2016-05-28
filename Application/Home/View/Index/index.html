@@ -1,0 +1,73 @@
+<extend name="Base/base" />
+
+<block name="style">
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" media="screen" href="__PLUG__/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="__PLUG__/menu/css/simple_menu.css">
+
+</block>
+
+<block name="content">
+    <!-- tab panes -->
+    <div id="prod_wrapper">
+        <div id="panes">
+            <volist name="blog_data" id="vo">
+                <div> <img src="__UPLOADS__/{$vo.blog_photo}" width="465px" height="300px" alt="">
+                    <h1>{$vo.title}</h1>
+                    <ul class="post_meta" style="margin:0">
+                        <li class="post_meta_date"><a href="#">{$vo.public_date|date="Y-m-d",###}</a></li>
+                        <li class="post_meta_comments"><a href="#">{$vo.commit_count}</a></li>
+                        <li class="post_meta_admin"><a href="#">{$vo.praise}</a></li>
+                        <li class="post_meta_prise"><a href="#">{$vo.browsenumber}</a></li>
+                    </ul>
+                    <p>{$vo.blog_newsletter|htmlspecialchars_decode}</p>
+                    <p style="text-align:right; margin-right: 16px"><a href="{:U('Index/look_blog_detail')}?id={$vo.id}" class="button">More Info</a></p>
+                </div>
+        </volist>
+    </div>
+
+        <!-- END tab panes -->
+        <div style="clear:both"></div>
+        <!-- navigator -->
+        <div id="prod_nav">
+            <ul>
+                <volist name="blog_data" id="vo">
+                    <li><a href="#1"> <img src="__UPLOADS__/{$vo.blog_photo}" width="160px" alt=""><strong>{$vo.tags}</strong> </a></li>
+                </volist>
+            </ul>
+        </div>
+        <!-- END navigator -->
+    </div>
+    <!-- END prod wrapper -->
+    <div style="clear:both"></div>
+
+    <div class="one-third">
+        <h2>Business Solutions</h2>
+        <p>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.</p>
+        <p style="text-align:right; margin-right: 15px"><a href="#" class="button_small">Find out more</a></p>
+    </div>
+
+    <div class="one-third">
+        <h2>Become a Partner</h2>
+        <p>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.</p>
+        <p style="text-align:right; margin-right: 15px"><a href="#" class="button_small">Contact Us Today</a></p>
+    </div>
+
+    <div class="one-third last">
+        <h2>Latest News</h2>
+        <p>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.</p>
+        <p style="text-align:right; margin-right: 15px"><a href="#" class="button_small">Read Article</a></p>
+    </div>
+
+    <div style="clear:both"></div>
+
+    <div class="box_highlight" style="margin-top:40px">
+        <h4 style="text-align:center">当你感到悲哀痛苦时，最好是去学些什么东西。学习会使你永远立于不败之地。    —— 王尔德</h4>
+    </div>
+    <div style="clear:both; height: 20px"></div>
+</block>
+
+<block name="script">
+    <script src="__PLUG__/js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="__JS__/index.js"></script>
+</block>

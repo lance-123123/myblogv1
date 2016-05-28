@@ -25,6 +25,7 @@ class AddBlogController extends Controller{
         $data['tags']=I('post.choice');
         $data['public_date']=time();
         $data['update_time']=time();
+        $data['blog_newsletter']=mb_substr($data['blog_content'],0,100,'utf-8');
         $add_blog=$blog->data($data)->add();
          if($add_blog){
             $this->ajaxReturn(0);
