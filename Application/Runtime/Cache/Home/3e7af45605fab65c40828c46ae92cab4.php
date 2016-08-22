@@ -41,16 +41,16 @@
    .page_set2{
       background:#fff;
       height:100%;
-      background-image:url(/myblogv1/Public/home/js/src/images/18.png);
+      background-image:url(/myblogv1/Public/home/js/src/images/35.png);
       background-repeat:no-repeat;
    }
    .image{
-       transform:rotate(-10deg);
-       -ms-transform:rotate(-10deg);    
-       -moz-transform:rotate(-10deg);   
-       -webkit-transform:rotate(-10deg);  
-       -o-transform:rotate(-10deg);  
-          padding: 347px 34px;
+       transform:rotate(-14deg);
+       -ms-transform:rotate(-14deg);    
+       -moz-transform:rotate(-14deg);   
+       -webkit-transform:rotate(-14deg);  
+       -o-transform:rotate(-14deg);  
+          padding: 300px 45px;
    }
 
  </style>
@@ -67,7 +67,7 @@
 <input type="hidden" value="<?php echo U('Index/add_blog_number');?>" id="plug_number">
   <header>
     <h1>lance--blog</h1>
-    <h2>当你珍惜自己的过去，满意自己的现在，乐观自己的未来时，你就站在了生活的最高处…</h2>
+    <h2>我确信我热爱自己所做的事情，这就是这些年来支持我继续走下去的唯一理由。</h2>
     <div class="logo"><a href="#"></a></div>
     <nav id="topnav"><a href="<?php echo U('Index/index');?>">首页</a><a href="<?php echo U('ShowArtical/blog_list');?>">文章</a><!-- <a href="<?php echo U('Index/blog_type');?>">分类</a> --><a href="<?php echo U('AboutMe/show_about_me');?>">关于</a><a href="<?php echo U('ChatMe/chat_me');?>">记忆</a></nav>
   </header>
@@ -86,8 +86,9 @@
         
     </div>
     <div class="page_set2">
+       
         <div class="image">
-         <img src="/myblogv1/Uploads//<?php echo ($vo["pthoto_url"]); ?>" style=" margin-top:8%" width="250px" height="250px">
+         <img src="/myblogv1/Uploads//<?php echo ($vo["pthoto_url"]); ?>" style="margin-top:8%" width="231px" height="227px">
         </div>
       <!-- <div class="autor"><span>作者：程鹏辉</span><span>分类：[<a href="javascript:void(0)"><?php echo ($vo["type_name"]); ?></a>]</span><span>浏览（<a href="/"><?php echo ($vo["browsenumber"]); ?></a>）</span><span>评论（<a href="/"><?php echo ($vo["commit_count"]); ?></a>）</span><span>点赞（<a href="/"><?php echo ($vo["praise"]); ?></a>）</span></div> -->
    </div><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -101,7 +102,7 @@
     <div class="avatar"><a href="about.html"><span>关于我</span></a></div>
     <div class="topspaceinfo">
       <h1>座右铭</h1>
-      <p>我确信我热爱自己所做的事情，这就是这些年来支持我继续走下去的唯一理由。</p>
+      <p>当我们不再年轻的时候，当我们不再做程序的时候，唯有这些博客，记录着我们曾经为程序欣喜、为程序付出过汗水的经历。 </p>
     </div>
     <div class="about_c">
       <p>姓名：程鹏辉</p>

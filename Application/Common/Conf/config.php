@@ -11,7 +11,7 @@ return array(
     'DB_PORT'               =>  '3306',        // 端口
 
     /* 默认设定 */
-    'DEFAULT_MODULE'        =>  'Admin',  // 默认模块
+    'DEFAULT_MODULE'        =>  'Home',  // 默认模块
     'DEFAULT_CONTROLLER'    =>  'Index', // 默认控制器名称
     'DEFAULT_ACTION'        =>  'index', // 默认操作名称
 

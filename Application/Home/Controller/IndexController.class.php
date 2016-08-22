@@ -1,6 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use Think\Verify;
 /*
  *显示首页展示界面
  *
@@ -106,29 +107,37 @@ class IndexController extends BaseController {
      *添加评论
      **/
     public function add_blog_commit(){
-          $ip_info=json_decode($this->getIpAddress(),true);
-          $data['email']=I('post.email');
-          $data['userful_chat']=I('post.name');
-          $data['message']=I('post.content');
-          $data['blog_id']=$id=I('post.id');
-          $data['message_time']=time();
-          $data['province']=$ip_info['province'];
-          $data['city']=$ip_info['city'];
-          $comment=M('comment');
-          $blog=M('blog');
-          $add_commit=$comment->data($data)->add();
-          if($add_commit){//添加留言成功
-            $commit_fulg=$blog->where("id=$id")->setInc('commit_count',1);
-            if($commit_fulg){
-                $comment->commit();
-                $this->ajaxReturn(0); 
-            }else{
-                $comment->rollback();
-                $this->ajaxReturn(1);
+          $code=I('post.code');
+
+          $check_s=$this->check_verify($code); 
+          if($check_s != true){
+            $this->ajaxReturn(2);
+          }else{
+            $ip_info=json_decode($this->getIpAddress(),true);
+            $data['email']=I('post.email');
+            $data['userful_chat']=I('post.name');
+            $data['message']=I('post.content');
+            $data['blog_id']=$id=I('post.id');
+            $data['message_time']=time();
+            $data['province']=$ip_info['province'];
+            $data['city']=$ip_info['city'];
+            $comment=M('comment');
+            $blog=M('blog');
+            $add_commit=$comment->data($data)->add();
+            if($add_commit){//添加留言成功
+              $commit_fulg=$blog->where("id=$id")->setInc('commit_count',1);
+              if($commit_fulg){
+                  $comment->commit();
+                  $this->ajaxReturn(0); 
+              }else{
+                  $comment->rollback();
+                  $this->ajaxReturn(1);
+              }
+            }else{//添加留言失败
+              $this->ajaxReturn(1);
             }
-          }else{//添加留言失败
-            $this->ajaxReturn(1);
-          }
+        }
+          
     }
   
     //根据留言者的IP地址查到其所属的位置
@@ -145,9 +154,27 @@ class IndexController extends BaseController {
       $fet_type_list=$blog_type->where('status = 0')->select();
       $this->assign('type_list',$fet_type_list);
       $this->display();
+    }
+
+    /* 生成验证码 */
+    public function verify()
+     {
+         $config = [
+             'fontSize' => 19, // 验证码字体大小
+             'length' => 4, // 验证码位数
+             'imageH' => 34
+         ];
+         $Verify = new Verify($config);
+         $Verify->entry();
+     }
+
+      /* 验证码校验 */
+    public function check_verify($code, $id = '')
+    {
+        $verify = new \Think\Verify();
+        return $verify->check($code, $id);
     }  
    
-
 }
 
 ?>

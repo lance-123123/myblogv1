@@ -89,6 +89,9 @@
       
             <div class="form-group" id="message_content">
                     <textarea class="form-control"  style="width:100%;resize:none;font-size:14px;" rows="10"   placeholder="  你想说点什么？"></textarea>
+             <label for="exampleInputName2" style="">验证码：</label>       
+            <input type="text" name="code" class="form-control" id="code" placeholder="请输入验证码" style="width:270px;height:25px;margin-top:10px">
+            <img id="verify_img" alt="点击更换" style="position: relative;top: -31px;left: 350px;" class="form-control" title="点击更换" src="<?php echo U('Index/verify',array());?>" >
               <button type="submit" class="btn btn-info shiny" style="margin-left:91%;margin-top:10px;" id="submit">发布</button>      
             </div>
         </form>

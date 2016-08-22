@@ -20,12 +20,32 @@ $("#imagse").click(function(){
 });
 
 
+    var img = $('#verify_img');
+    var verifyimg = img.attr("src");
+    img.click(function(){
+      if( verifyimg.indexOf('?')>0){
+            $(this).attr("src", verifyimg+'&random='+Math.random());
+        }else{
+            $(this).attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+        }
+    });
+
+function refuse(){
+    if(verifyimg.indexOf('?')>0){
+            $('#verify_img').attr("src", verifyimg+'&random='+Math.random());
+    }else{
+        $('#verify_img').attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+    }
+}
+
+
 /*添加博客*/
 $("#form").submit(function(){
     var email = $("#email").val();
     var name = $("#name").val();
     var  content = $("textarea").val();
     var ids=$("#blog_ids").attr("value");
+    var code=$("#code").val();
     if (email == '') {
     	layer.msg('邮箱不能为空！');
     }else if (!email.match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/)) {
@@ -34,6 +54,8 @@ $("#form").submit(function(){
         layer.msg('姓名不能为空！');
     }else if(content == ''){
         layer.msg('内容不能为空！');
+    }else if(code == ''){
+        layer.msg('验证码不能为空！');
     }else{
         $.ajax({
             type:'POST',
@@ -42,7 +64,8 @@ $("#form").submit(function(){
                 'email':email,
                 'name':name,
                 'content':content,
-                'id':ids
+                'id':ids,
+                'code':code
             },
             success:function(data){
                 if (data== 0) {
@@ -51,6 +74,11 @@ $("#form").submit(function(){
                     $("#email").val('');
                    $("#name").val('');
                    $("textarea").val('');
+                   $("#code").val('');
+                }else if(data==2){
+                     layer.msg('验证码错误！');
+                     refuse();
+
                 }else{
                     layer.msg('留言失败！');
                 }
