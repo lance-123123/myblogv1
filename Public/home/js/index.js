@@ -11,3 +11,14 @@ $(document).ready(function () {
         return false;
     });
 });
+
+$(".button").click(function(){
+	var id= $(this).attr("data");
+	 $.ajax({
+        type: 'POST',
+        url: $("#plug_number").attr("value"),
+        data: {
+            'id': id
+        }
+    });
+});

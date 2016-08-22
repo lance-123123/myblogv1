@@ -24,6 +24,9 @@
 
     <!--引入css文件-->
     
+<style type="text/css">
+
+</style>
     <!--<link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/css/index.css">-->
 
     <style>
@@ -195,7 +198,8 @@
                 <i class="collapse-icon fa fa-bars"></i>
             </div>
             <!-- /Sidebar Collapse -->
-            <!-- Account Area and Settings --->
+            <!-- Account Area and Settings -->
+
             <div class="navbar-header pull-right">
                 <div class="navbar-account">
                     <ul class="account-area">
@@ -206,7 +210,16 @@
                             </a>
                             <!--Messages Dropdown-->
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
-
+                            <?php if(is_array($commit_date)): $i = 0; $__LIST__ = $commit_date;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+                                    
+                                        <div class="clearfix">
+                                            <div class="notification-body">
+                                                <span class="title"><?php echo ($vo["userful_chat"]); ?></span>在
+                                                <span class="description"><?php echo ($vo["title"]); ?></span><span>留言</span>
+                                                <?php echo ($vo["message_time"]); ?>
+                                            </div>
+                                        </div>
+                                </li><?php endforeach; endif; else: echo "" ;endif; ?> 
                             </ul>
                             <!--/Messages Dropdown-->
                         </li>
@@ -214,32 +227,28 @@
                         <li>
                             <a class="login-area dropdown-toggle" data-toggle="dropdown">
                                 <div class="avatar" title="View your public profile">
-                                    <img src="#">
+                                    <img src="/myblogv1/Public/assets/img/avatars/John-Smith.jpg">
                                 </div>
                                 <section>
-                                    <h2><span class="profile"><span>David Stevenson</span></span></h2>
+                                    <h2><span class="profile"><span>欢迎你管理员</span></span></h2>
                                 </section>
                             </a>
                             <!--Login Area Dropdown-->
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
-                                <li class="username"><a>David Stevenson</a></li>
-                                <li class="email"><a>David.Stevenson@live.com</a></li>
+                                <li class="username"><a>管理员</a></li>
+                               <!--  <li class="email"><a>David.Stevenson@live.com</a></li> -->
                                 <!--Avatar Area-->
                                 <li>
                                     <div class="avatar-area">
-                                        <img src="#" class="avatar">
-                                        <span class="caption">Change Photo</span>
+                                        <img src="/myblogv1/Public/assets/img/avatars/John-Smith.jpg" class="avatar">
+                                        <span class="caption">修改头像</span>
                                     </div>
                                 </li>
                                 <!--Avatar Area-->
-                                <li class="edit">
-                                    <a href="profile.html" class="pull-left">Profile</a>
-                                    <a href="#" class="pull-right">Setting</a>
-                                </li>
                                 <!--/Theme Selector Area-->
                                 <li class="dropdown-footer">
                                     <a href="login.html">
-                                        Sign out
+                                        退出系统
                                     </a>
                                 </li>
                             </ul>
@@ -266,67 +275,61 @@
             <!-- Sidebar Menu -->
             <ul class="nav sidebar-menu">
                 <li class="active">
-                    <a href="<?php echo U('AddBlog/addblog');?>">
+                <!-- 博客的访问量 -->
+                    <a href="<?php echo U('Index/index');?>">
                         <i class="menu-icon glyphicon glyphicon-home"></i>
                         <span class="menu-text"> 首页 </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="<?php echo U('AddBlog/addblog');?>">
+                    <a href="<?php echo U('Mangement/manage_blog');?>" class="menu-dropdown">
                         <i class="menu-icon fa  fa-edit"></i>
-                        <span class="menu-text"> 写文章 </span>
+                        <span class="menu-text">文章管理</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="<?php echo U('Mangement/type_manage');?>" class="menu-dropdown">
+                        <i class="menu-icon fa   fa-puzzle-piece"></i>
+                        <span class="menu-text">类型管理</span>
                     </a>
                 </li>
                 <!--Databoxes-->
 
                 <li>
-                    <a href="#" class="menu-dropdown">
-                        <i class="menu-icon fa fa-desktop"></i>
-                        <span class="menu-text">后台管理</span>
-                        <i class="menu-expand"></i>
+                    <a href="<?php echo U('History/show_history');?>">
+                        <i class="menu-icon fa  fa-th-list"></i>
+                        <span class="menu-text">历史管理</span>
+                        <!-- <i class="menu-expand"></i> -->
                     </a>
-
-                    <ul class="submenu">
-                        <li>
-                            <a href="<?php echo U('Mangement/manage_blog');?>">
-                                <span class="menu-text">博客管理</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo U('Commit/show_commit');?>" class="menu-dropdown">
-                                <span class="menu-text">留言管理</span>
-                            </a>
-                        </li>
-
-                    </ul>
                 </li>
 
-                <!--Widgets-->
+                <!-- 留言管理 -->
+                <li>
+                    <a href="<?php echo U('Commit/show_commit');?>">
+                        <i class="menu-icon fa   fa-comment"></i>
+                        <span class="menu-text">留言管理</span>
+                        <!-- <i class="menu-expand"></i> -->
+                    </a>
+                </li>
+
+
+                 <!-- 留言管理 -->
+                <li>
+                    <a href="<?php echo U('Photo/show_photo');?>">
+                        <i class="menu-icon fa  fa-picture-o"></i>
+                        <span class="menu-text">图片管理</span>
+                        <!-- <i class="menu-expand"></i> -->
+                    </a>
+                </li>
 
                 <!--UI Elements-->
                 <li>
-                    <a href="#" class="menu-dropdown">
+                    <a href="<?php echo U('Personal/user');?>" class="menu-dropdown">
                         <i class="menu-icon fa fa-user"></i>
                         <span class="menu-text"> 个人中心 </span>
-                        <i class="menu-expand"></i>
                     </a>
-
-                    <ul class="submenu">
-                        <li>
-                            <a href="elements.html">
-                                <span class="menu-text">个人详情</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="menu-dropdown">
-                                <span class="menu-text">我的简介</span>
-                            </a>
-                        </li>
-
-                    </ul>
                 </li>
             </ul>
             <!-- /Sidebar Menu -->
@@ -338,9 +341,9 @@
                     
     <li>
         <i class="fa fa-desktop"></i>
-        <a href="#">后台管理</a>
+        <a href="#">留言管理</a>
     </li>
-    <li class="active">博客管理</li>
+    <li class="active">留言管理</li>
 
                 </ul>
             </div>
@@ -353,15 +356,15 @@
                 </div>
                 <!--Header Buttons-->
                 <div class="header-buttons">
-                    <a class="sidebar-toggler" href="#">
+                    <!-- <a class="sidebar-toggler" href="#">
                         <i class="fa fa-arrows-h"></i>
-                    </a>
+                    </a> -->
                     <a class="refresh" id="refresh-toggler" href="">
                         <i class="glyphicon glyphicon-refresh"></i>
                     </a>
-                    <a class="fullscreen" id="fullscreen-toggler" href="#">
-                        <i class="glyphicon glyphicon-fullscreen"></i>
-                    </a>
+                   <!--  <a class="fullscreen" id="fullscreen-toggler" href="#">
+                       <i class="glyphicon glyphicon-fullscreen"></i>
+                   </a> -->
                 </div>
                 <!--Header Buttons End-->
             </div>
@@ -375,43 +378,46 @@
             <div class="col-xs-12 col-md-12">
                 <div class="widget">
                     <div class="widget-header ">
-                        <span class="widget-caption"><i class="fa fa-desktop"></i>&nbsp;&nbsp;博客管理</span>
+                        <span class="widget-caption"><i class="fa fa-desktop"></i>&nbsp;&nbsp;留言管理</span>
                         <div class="widget-buttons">
-                            <a href="#" data-toggle="maximize">
+                            <!-- <a href="#" data-toggle="maximize">
                                 <i class="fa fa-expand"></i>
                             </a>
                             <a href="#" data-toggle="collapse">
                                 <i class="fa fa-minus"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <div class="widget-body">
-                        <div class="btn-group">
+                         <div class="btn-group" style="margin-bottom:10px">
                             <button type="button" class="btn btn-default btn-del"
-                                    data="<?php echo U('admin/Mangement/delete_blog');?>"><i
+                                    data="<?php echo U('admin/Commit/del_commit');?>"><i
                                     class="fa fa-minus-square"></i> 删除
                             </button>
-                            <input type="hidden" id="change" value="<?php echo U('Admin/Mangement/change_status');?>">
+                            <input type="hidden" id="changes" value="<?php echo U('admin/Mangement/change_type_status');?>">
                         </div>
 
                         <div role="grid" id="simpledatatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+                    
                             <table class="table table-striped table-bordered table-hover" id="simpledatatable">
                                 <thead>
                                 <tr>
-                                    <th>名称</th>
-                                    <th>标签</th>
-                                    <th>浏览量</th>
-                                    <th>点赞量</th>
-                                    <th>更新日期</th>
-                                    <th> 状态</th>
-                                    <th> 操作</th>
+                                    <th>博客名称</th>
+                                    <th>留言者</th>
+                                    <th>留言时间</th>
+                                    <th>所在省份</th>
+                                    <th>所在城市</th>
+                                    <th>留言内容</th>
+                                    <!-- <th>状态</th> -->
+                                    <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 </tbody>
                             </table>
                         </div>
-                        <input type="hidden" id="data" value="<?php echo U('Commit/get_blog_data');?>">
+
+                        <input type="hidden" id="data" value="<?php echo U('Commit/get_commit_data');?>">
                     </div>
                 </div>
             </div>

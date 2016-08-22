@@ -1,0 +1,68 @@
+<extend name="Base/base" />
+<block name="style">
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/index.css">-->
+</block>
+
+<block name="breadcrumb">
+    <li>
+        <i class="fa fa-home"></i>
+        <a href="#">图片管理</a>
+    </li>
+    <li class="active">图片管理</li>
+</block>
+
+<block name="header">
+</block>
+<block name="content">
+    <div class="page-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="widget">
+                    <div class="widget-header ">
+                        <span class="widget-caption"><i class="fa fa-globe"></i>&nbsp;&nbsp;图片管理</span>
+                    </div>
+                    <div class="widget-body">
+
+                     <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-add"
+                                    data="{:U('Photo/add_photo')}"><i
+                                    class="fa fa-plus-square"></i> 新增
+                            </button>
+                            <button type="button" class="btn btn-default btn-edit"
+                                    data="{:U('admin/Photo/show_edit_photo')}"><i
+                                    class="fa fa-pencil-square"></i> 编辑
+                            </button>
+                            <button type="button" class="btn btn-default btn-del"
+                                    data="{:U('admin/Photo/del_photos')}"><i
+                                    class="fa fa-minus-square"></i> 删除
+                            </button>
+                            <input type="hidden" id="changes" value="{:U('admin/Photo/change_status')}">
+                        </div>
+
+                        <div role="grid" id="simpledatatable_wrapper" class="dataTables_wrapper form-inline no-footer">
+                    
+                            <table class="table table-striped table-bordered table-hover" id="simpledatatable">
+                                <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>时间</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                            <input type="hidden" id="data" value="{:U('Photo/get_photo_data')}">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</block>
+
+<block name="script">
+<script type="text/javascript" src="__JS__/show_photo.js"></script>
+</block>

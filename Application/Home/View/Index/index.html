@@ -2,72 +2,58 @@
 
 <block name="style">
     <!-- CSS Files -->
-    <link rel="stylesheet" type="text/css" media="screen" href="__PLUG__/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="__PLUG__/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="__PLUG__/menu/css/simple_menu.css">
-
+    <link type="text/css" href="__JS__/scal/css/style.css" rel="stylesheet" /> -->
 </block>
-
-<block name="content">
-    <!-- tab panes -->
-    <div id="prod_wrapper">
-        <div id="panes">
-            <volist name="blog_data" id="vo">
-                <div> <img src="__UPLOADS__/{$vo.blog_photo}" width="465px" height="300px" alt="">
-                    <h1>{$vo.title}</h1>
-                    <ul class="post_meta" style="margin:0">
-                        <li class="post_meta_date"><a href="#">{$vo.public_date|date="Y-m-d",###}</a></li>
-                        <li class="post_meta_comments"><a href="#">{$vo.commit_count}</a></li>
-                        <li class="post_meta_admin"><a href="#">{$vo.praise}</a></li>
-                        <li class="post_meta_prise"><a href="#">{$vo.browsenumber}</a></li>
-                    </ul>
-                    <p>{$vo.blog_newsletter|htmlspecialchars_decode}</p>
-                    <p style="text-align:right; margin-right: 16px"><a href="{:U('Index/look_blog_detail')}?id={$vo.id}" class="button">More Info</a></p>
-                </div>
-        </volist>
-    </div>
-
-        <!-- END tab panes -->
-        <div style="clear:both"></div>
-        <!-- navigator -->
-        <div id="prod_nav">
+<block name="article">
+<div class="banner">
+      <ul class="texts">
+        <p>The best preparation for tomorrow is doing your best today.</p>
+        <p>对明天做好的准备就是今天做到最好！</p>
+      </ul>
+</div>
+<div class="bloglist">
+      <h2>
+        <p><span>推荐</span>文章</p>
+      </h2>
+      <input type="hidden" value="{:U('Index/add_blog_number')}" id="plug_number">
+      <volist name="blog_data" id="vo">
+       <div class="blogs">
+            <h3><a href="{:U('Index/look_blog_detail')}?id={$vo.id}" class="readmore1" data="{$vo.id}">{$vo.title}</a></h3>
+            <figure><img src="__UPLOADS__/{$vo.blog_photo}" ></figure>
             <ul>
-                <volist name="blog_data" id="vo">
-                    <li><a href="#1"> <img src="__UPLOADS__/{$vo.blog_photo}" width="160px" alt=""><strong>{$vo.tags}</strong> </a></li>
-                </volist>
+              <p>{$vo.blog_newsletter|htmlspecialchars_decode}</p>
+              <a href="{:U('Index/look_blog_detail')}?id={$vo.id}" class="readmore" data="{$vo.id}">阅读全文&gt;&gt;</a>
             </ul>
-        </div>
-        <!-- END navigator -->
-    </div>
-    <!-- END prod wrapper -->
-    <div style="clear:both"></div>
-
-    <div class="one-third">
-        <h2>Business Solutions</h2>
-        <p>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.</p>
-        <p style="text-align:right; margin-right: 15px"><a href="#" class="button_small">Find out more</a></p>
-    </div>
-
-    <div class="one-third">
-        <h2>Become a Partner</h2>
-        <p>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.</p>
-        <p style="text-align:right; margin-right: 15px"><a href="#" class="button_small">Contact Us Today</a></p>
-    </div>
-
-    <div class="one-third last">
-        <h2>Latest News</h2>
-        <p>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.</p>
-        <p style="text-align:right; margin-right: 15px"><a href="#" class="button_small">Read Article</a></p>
-    </div>
-
-    <div style="clear:both"></div>
-
-    <div class="box_highlight" style="margin-top:40px">
-        <h4 style="text-align:center">当你感到悲哀痛苦时，最好是去学些什么东西。学习会使你永远立于不败之地。    —— 王尔德</h4>
-    </div>
-    <div style="clear:both; height: 20px"></div>
+            <p class="autor"><span>作者：程鹏辉</span><span>分类：【<a href="/">{$vo.type_name}</a>】</span><span>浏览（<a href="/">{$vo.browsenumber}</a>）</span><span>评论（<a href="/">{$vo.commit_count}</a>）</span><span>点赞（<a href="/">{$vo.praise}</a>）</span></p>
+            <div class="dateview">{$vo.public_date|date="Y-m-d",###}</div>
+      </div>
+      </volist>      
 </block>
 
 <block name="script">
-    <script src="__PLUG__/js/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="__JS__/index.js"></script>
+    <script type="text/javascript">
+      $(".readmore").click(function(){
+        var id= $(this).attr("data");
+        $.ajax({
+           type: 'POST',
+           url: $("#plug_number").attr("value"),
+           data: {
+              'id': id
+             }
+          });
+      });
+
+      $(".readmore1").click(function(){
+        var id= $(this).attr("data");
+        $.ajax({
+           type: 'POST',
+           url: $("#plug_number").attr("value"),
+           data: {
+              'id': id
+             }
+          });
+      });
+    </script>
 </block>

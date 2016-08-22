@@ -7,9 +7,9 @@
 <block name="breadcrumb">
     <li>
         <i class="fa fa-edit"></i>
-        <a href="#">写文章</a>
+        <a href="#">编辑博客</a>
     </li>
-    <li class="active">添加博客</li>
+    <li class="active">编辑博客</li>
 </block>
 
 <block name="header">
@@ -20,14 +20,8 @@
             <div class="col-xs-12 col-md-12">
                 <div class="widget">
                     <div class="widget-header ">
-                        <span class="widget-caption"><i class="fa fa-pencil"></i>&nbsp;&nbsp;添加博客</span>
+                        <span class="widget-caption"><i class="fa fa-pencil"></i>&nbsp;&nbsp;编辑博客</span>
                         <div class="widget-buttons">
-                            <a href="#" data-toggle="maximize">
-                                <i class="fa fa-expand"></i>
-                            </a>
-                            <a href="#" data-toggle="collapse">
-                                <i class="fa fa-minus"></i>
-                            </a>
                         </div>
                     </div>
                     <div class="widget-body">
@@ -71,6 +65,15 @@
                                         <input type="text" id="tagsvalue" class="form-control" value="{$blog_data.tags}" data-role="tagsinput" name="tags" placeholder="Add tags" />
                                     </div>
 
+                                    <div class="form-group">
+                                     <label>博客分类</label>
+                                     <select id="blog_type" style="width:100%">
+                                  <volist name="blog_list" id="vo">
+                                       <option value="{$vo.id}">{$vo.type_name}</option>
+                                  </volist>
+                                     </select>
+                                </div>
+                                <input type="hidden" id="blog_types" value="{$blog_data.type_id}">
                                     <input type="hidden" id="photourl" value="{$blog_data.blog_photo}">
                                     <button type="submit" class="btn btn-success" id="submitbutton" style="margin-left: 90%">提 交</button>
                                 </form>

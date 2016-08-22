@@ -9,8 +9,17 @@
 namespace Admin\Controller;
 use Think\Controller;
 class AddBlogController extends Controller{
+     /*初始化方法*/
+   public function _initialize(){
+      if(!session('id')){
+            $this->redirect('Public/login');
+        }
+    }
+    
     public function addblog()
     {
+        $blog_type=M('blog_type')->where('status != 1')->select();
+        $this->assign('blog_list',$blog_type);
         $this->display();
     }
 
@@ -19,18 +28,27 @@ class AddBlogController extends Controller{
      */
     public function submitblog(){
         $blog=M('blog');
+        $blog_type=M('blog_type');
         $data['title']=I('post.title');
         $data['blog_photo']=I('post.photourl');
         $data['blog_content']=I('post.blog_content');
         $data['tags']=I('post.choice');
         $data['public_date']=time();
         $data['update_time']=time();
-        $data['blog_newsletter']=mb_substr($data['blog_content'],0,100,'utf-8');
+        $type_ids=$data['type_id']=I('post.type_id');
+        $data['blog_newsletter']=mb_substr(trim(I('post.blog_newsletter')),0,120,'utf-8');
         $add_blog=$blog->data($data)->add();
-         if($add_blog){
-            $this->ajaxReturn(0);
+        if($add_blog){
+             $add=$blog_type->where("id=$type_ids")->setInc('content',1);
+             if($add){
+                 $blog->commit();
+                 $this->ajaxReturn(0);
+             }else{
+                $blog->rollback();
+                $this->ajaxReturn(1);
+             }
          }else{
-             $this->ajaxReturn(1);
+            $this->ajaxReturn(1);
          }
     }
 

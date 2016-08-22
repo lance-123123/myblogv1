@@ -1,5 +1,9 @@
 var photo=$("#show_image").attr('value');
 
+var blog_types = $("#blog_types").val();
+
+ $("#blog_type").val(blog_types);
+
 $("#document").fileupload({
     url:$("#upimagurl").attr('value'),
     sequentialUploads: true
@@ -32,11 +36,13 @@ $("#document_cancle").click(function(){
 });
 
 $("#form").submit(function(){
+    var arr = UE.getEditor('editor').getPlainTxt();
     var title = $("#title").val();
     var photourl = $("#photourl").val();
     var  blog_content = $("textarea").val();
     var choice = $("#tagsvalue").val();
     var id=$("#blog_id").val();
+    var blog_newsletter= arr;
     if (title == '') {
         bootMessage("warning","博客标题不能为空！");
     }else if (photourl == '') {
@@ -54,7 +60,9 @@ $("#form").submit(function(){
                 'photourl':photourl,
                 'blog_content':blog_content,
                 'choice':choice,
-                'blog_id':id
+                'blog_id':id,
+                'type_id':$("#blog_type").val(),
+                'blog_newsletter':blog_newsletter
             },
             success:function(data){
                 if (data== 0) {

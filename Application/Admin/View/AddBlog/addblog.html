@@ -46,6 +46,7 @@
                                     <label>内容</label>
                                     <textarea id="editor" name="content">
                                     </textarea>
+                                    <textarea id="blis" style="display:none"></textarea>
                                 </div>
 
                                 <div class="form-group" style="margin-left: 7%">
@@ -67,6 +68,15 @@
                                 <div class="form-group">
                                     <label>标签</label>
                                         <input type="text" id="tagsvalue" class="form-control" value="技术" data-role="tagsinput" name="tags" placeholder="Add tags" />
+                                </div>
+
+                                <div class="form-group">
+                                     <label>博客分类</label>
+                                     <select id="blog_type" style="width:100%">
+                                  <volist name="blog_list" id="vo">
+                                       <option value="{$vo.id}">{$vo.type_name}</option>
+                                  </volist>
+                                     </select>
                                 </div>
 
                                 <input type="hidden" id="photourl">

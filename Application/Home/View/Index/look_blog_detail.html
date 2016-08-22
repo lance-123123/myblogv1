@@ -1,65 +1,92 @@
 <extend name="Base/base" />
 
 <block name="style">
-    <!-- CSS Files -->
-    <link rel="stylesheet" type="text/css" media="screen" href="__PLUG__/css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="__PLUG__/menu/css/simple_menu.css">
-    <link rel="stylesheet" type="text/css" href="__PLUG__/boxes/css/style6.css">
-    <link rel="stylesheet" type="text/css" href="__CSS__/look_blog_detail.css">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/static/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css">
+    <link href="__CSS__/style.css" rel="stylesheet">
+    <!-- Contact Form -->
+<link href="__PLUG__/contact-form/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="__PLUG__/contact-form/css/uniform.css" media="screen" rel="stylesheet" type="text/css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="__PLUG__/syntaxhighlighter/styles/shCoreDefault.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/look_blog_detail.css">
 </block>
 
-<block name="content">
-    <div id="prod_wrapper">
-        <h1>{$blog_detail.title}</h1>
-
-        <ul class="post_meta" style="margin:0">
-            <li class="post_meta_date"><a href="#">{$blog_detail.public_date|date="Y-m-d",###}</a></li>
-            <li class="post_meta_comments"><a href="#">{$blog_detail.commit_count}</a></li>
-            <li class="post_meta_admin"><a href="#">{$blog_detail.praise}</a></li>
-            <li class="post_meta_prise"><a href="#">{$blog_detail.browsenumber}</a></li>
-        </ul>
-        <div class="one">
-            <p>{$blog_detail.blog_content}</p>
-        </div>
-    </div>
-
-    <!-- end sidebar right -->
-    <div style="clear:both;"></div>
-      <a href="#" id="imagse" style="margin-left: 38%;margin-top: -50px"><img src="__IMG__/13.png"></a>
-    <div style="clear:both; height: 40px"></div>
-
-    <div>
-        <p class="jiathis_style_32x32">
-            <a href="#">分享到：</a><br/>
-            <a class="jiathis_button_qzone"></a>
-            <a class="jiathis_button_tsina"></a>
-            <a class="jiathis_button_tqq"></a>
-            <a class="jiathis_button_weixin"></a>
-            <a class="jiathis_button_renren"></a>
-            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-        </p>
-        <br />
-       <div>
-           <!-- 上一篇 -->
-           <if condition="$blog_title.last_id eq null ">
+<block name="article">
+<input type="hidden" value="{:U('Index/add_prise_number')}" id="prise_number">
+<h2 class="about_h">您现在的位置是：<a href="/">文章</a>>><a href="1/">{$blog_detail.title}</a></h2>
+  <div class="index_about">
+      <h2 class="c_titile">{$blog_detail.title}</h2>
+      <p class="box_c"><span class="d_time">发布时间：{$blog_detail.public_date|date="Y-m-d",###}</span><span>编辑：杨青</span><span>浏览（{$blog_detail.browsenumber}）</span><span>评论览（{$blog_detail.commit_count}）</span><span>点赞（{$blog_detail.praise}）</span></p>
+      <ul class="infos">
+        <p>{$blog_detail.blog_content}</p>
+      </ul>
+      <div style="clear:both;"></div>
+           <a href="#" id="imagse" data="{$blog_detail.id}"><img src="__IMG__/13.png" style="margin-left: 45%;margin-top:20px" ></a>
+        <div style="clear:both; height: 40px"></div>
+      <div class="keybq">
+        <p><span>标签</span>：{$blog_detail.tags}</p>
+      </div>
+      <div class="nextinfo">
+        <if condition="$blog_title.last_id eq null ">
                <else /> <p>上一篇：<a href="{:U('Index/look_blog_detail')}?id={$blog_title.last_id}" class="look_cout_last">{$blog_title.last_title} </a></p>
-           </if>
+        </if>
 
-           <!-- 下一篇 -->
-           <if condition="$blog_title.after_id eq null ">
+        <if condition="$blog_title.after_id eq null ">
                <else /> <p>下一篇:  <a href="{:U('Index/look_blog_detail')}?id={$blog_title.after_id}" class="look_cout_after">{$blog_title.after_title}</a></p>
-           </if>
+        </if>
+        <div>
+          <div class="bshare-custom icon-medium"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+        </div>
+      </div>
+      <div class="otherlink">
+        <h2>相关评论</h2>
+
+        <div id="commit_content">
+        <notempty name="commit_detail"> 
+        <foreach name="commit_detail" item="vo" >  
+        <div class="comment">
+            <div class="comment-body">
+                <div class="comment-text">
+                    <div class="comment-header">
+                        <a href="#" title="" style="color:#3399FF">“ {$vo.userful_chat} ”</a><span style="">网友（{$vo.province} {$vo.city}）</span><span>{$vo.message_time|date="Y-m-d H:i:s",###}</span>
+                    </div>
+                   <p style="margin-left:20px;margin-top:5px;font-size:16px">{$vo.message}</p>
+                </div>
+            </div>
+          </div>
+         </foreach>
+         <else/>
+               <p style="text-align:center;margin-top:20px">暂无评论！</p> 
+        </notempty>
        </div>
+      </div>
+
+      <div style="margin-top:20px" id="me_set">
+      <div class="widget-header bg-blue">
+          <span class="widget-caption">添加评论：</span>
+      </div>
+      <form role="form"  method="post" id="form" action="{:U('Index/add_blog_commit')}" >
+            <input type="hidden" value="{$blog_detail.id}" id="blog_ids">
+            <div class="form-group" style="margin-top:20px;margin-bottom: 25px; ">
+              <label for="exampleInputEmail2">邮箱：</label>
+                <input type="text" class="form-control" id="email" style="width:270px;height:25px;" placeholder="亲！请留下你的邮箱">
+                     
+               <label for="exampleInputName2" style="margin-left:20px">姓名：</label>
+                <input type="text" class="form-control" style="width:270px;height:25px"   id="name" placeholder="亲！请留下你的姓名">
+            </div>
+      
+            <div class="form-group" id="message_content">
+                    <textarea class="form-control"  style="width:100%;resize:none;font-size:14px;" rows="10"   placeholder="  你想说点什么？"></textarea>
+              <button type="submit" class="btn btn-info shiny" style="margin-left:91%;margin-top:10px;" id="submit">发布</button>      
+            </div>
+        </form>
+      </div>
+
     </div>
-    <div style="clear:both; height: 20px"></div>
 </block>
 
 <block name="script">
-    <script src="__PLUG__/js/jquery.tools.min.js"></script>
-    <script type="text/javascript"src="__PUBLIC__/admin/static/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
-    <script type="text/javascript" src="__JS__/index.js"></script>
+  
+  <script type="text/javascript"src="__PUBLIC__/admin/static/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+  <script type="text/javascript" src="__JS__/look_blog_detail.js"></script>
     <script type="text/javascript">
         SyntaxHighlighter.all();
     </script>

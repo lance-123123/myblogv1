@@ -1,0 +1,79 @@
+<extend name="Base/base" />
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/upfile/css/jquery.fileupload.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/upfile/css/jquery.fileupload-ui.css">
+</block>
+
+<block name="breadcrumb">
+    <li>
+        <i class="fa fa-edit"></i>
+        <a href="#">编辑历史</a>
+    </li>
+    <li class="active">编辑历史</li>
+</block>
+
+<block name="header">
+</block>
+<block name="content">
+    <div class="page-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="widget">
+                    <div class="widget-header ">
+                        <span class="widget-caption"><i class="fa fa-pencil"></i>&nbsp;&nbsp;编辑历史</span>
+                        <div class="widget-buttons">
+                            <a href="#" data-toggle="maximize">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <a href="#" data-toggle="collapse">
+                                <i class="fa fa-minus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="widget-body">
+                        <div class="row">
+                            <input type="hidden" value="{:U('History/show_history')}" id="blog_path">
+                            <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <form method="post" id="form" action="{:U('History/submit_edit_history')}" role="form">
+                            <input type="hidden" id="ids" value="{$blog_type_list.id}">
+                                <div class="form-group">
+                                    <label>标题</label>
+                                    <input class="form-control" name="title" placeholder="历史标题最多只能13个字"  maxlength="13" id="title" value="{$blog_type_list.title}">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>内容</label>
+                                    <textarea id="editor" name="content">{$blog_type_list.content}
+                                    </textarea>
+                                </div>
+
+                              
+                                <input type="hidden" id="photourl">
+                                <button type="submit" class="btn btn-success" id="submitbutton" style="margin-left: 90%">提 交</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script src="__PUBLIC__assets/js/editors/wysiwyg/jquery.hotkeys.js"></script>
+    <script src="__PUBLIC__assets/js/editors/wysiwyg/prettify.js"></script>
+    <script src="__PUBLIC__assets/js/editors/wysiwyg/bootstrap-wysiwyg.js"></script>
+    <script src="__PUBLIC__assets/js/editors/summernote/summernote.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="__JS__/edit_history.js"></script>
+    <script type="text/javascript">
+        /*加载ue插件*/
+        var ue = UE.getEditor('editor');
+        /*给文本框添加宽度*/
+        $("textarea").css("height","300px");
+    </script>
+</block>

@@ -25,6 +25,8 @@
     <!--引入css文件-->
     
     <!--<link rel="stylesheet" type="text/css" href="/myblogv1/Public/admin/css/index.css">-->
+    <style type="text/css">
+    </style>
 
     <style>
         div.dataTables_filter label {
@@ -195,51 +197,36 @@
                 <i class="collapse-icon fa fa-bars"></i>
             </div>
             <!-- /Sidebar Collapse -->
-            <!-- Account Area and Settings --->
+            <!-- Account Area and Settings -->
+
             <div class="navbar-header pull-right">
                 <div class="navbar-account">
                     <ul class="account-area">
                         <li>
-                            <a class="wave in dropdown-toggle" data-toggle="dropdown" title="Help" href="#">
-                                <i class="icon fa fa-envelope"></i>
-                                <span class="badge">0</span>
-                            </a>
-                            <!--Messages Dropdown-->
-                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
-
-                            </ul>
-                            <!--/Messages Dropdown-->
-                        </li>
-
-                        <li>
                             <a class="login-area dropdown-toggle" data-toggle="dropdown">
                                 <div class="avatar" title="View your public profile">
-                                    <img src="#">
+                                    <img src="/myblogv1/Public/assets/img/avatars/John-Smith.jpg">
                                 </div>
                                 <section>
-                                    <h2><span class="profile"><span>David Stevenson</span></span></h2>
+                                    <h2><span class="profile"><span>欢迎你管理员</span></span></h2>
                                 </section>
                             </a>
                             <!--Login Area Dropdown-->
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
-                                <li class="username"><a>David Stevenson</a></li>
-                                <li class="email"><a>David.Stevenson@live.com</a></li>
+                                <li class="username"><a>管理员</a></li>
+                               <!--  <li class="email"><a>David.Stevenson@live.com</a></li> -->
                                 <!--Avatar Area-->
                                 <li>
                                     <div class="avatar-area">
-                                        <img src="#" class="avatar">
-                                        <span class="caption">Change Photo</span>
+                                        <img src="/myblogv1/Public/assets/img/avatars/John-Smith.jpg" class="avatar">
+                                        <span class="caption">修改头像</span>
                                     </div>
                                 </li>
                                 <!--Avatar Area-->
-                                <li class="edit">
-                                    <a href="profile.html" class="pull-left">Profile</a>
-                                    <a href="#" class="pull-right">Setting</a>
-                                </li>
                                 <!--/Theme Selector Area-->
                                 <li class="dropdown-footer">
-                                    <a href="login.html">
-                                        Sign out
+                                    <a href="<?php echo U('Public/logout');?>">
+                                        退出系统
                                     </a>
                                 </li>
                             </ul>
@@ -266,67 +253,61 @@
             <!-- Sidebar Menu -->
             <ul class="nav sidebar-menu">
                 <li class="active">
-                    <a href="<?php echo U('AddBlog/addblog');?>">
+                <!-- 博客的访问量 -->
+                    <a href="<?php echo U('Index/index');?>">
                         <i class="menu-icon glyphicon glyphicon-home"></i>
                         <span class="menu-text"> 首页 </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="<?php echo U('AddBlog/addblog');?>">
+                    <a href="<?php echo U('Mangement/manage_blog');?>" class="menu-dropdown">
                         <i class="menu-icon fa  fa-edit"></i>
-                        <span class="menu-text"> 写文章 </span>
+                        <span class="menu-text">文章管理</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="<?php echo U('Mangement/type_manage');?>" class="menu-dropdown">
+                        <i class="menu-icon fa   fa-puzzle-piece"></i>
+                        <span class="menu-text">类型管理</span>
                     </a>
                 </li>
                 <!--Databoxes-->
 
                 <li>
-                    <a href="#" class="menu-dropdown">
-                        <i class="menu-icon fa fa-desktop"></i>
-                        <span class="menu-text">后台管理</span>
-                        <i class="menu-expand"></i>
+                    <a href="<?php echo U('History/show_history');?>">
+                        <i class="menu-icon fa  fa-th-list"></i>
+                        <span class="menu-text">历史管理</span>
+                        <!-- <i class="menu-expand"></i> -->
                     </a>
-
-                    <ul class="submenu">
-                        <li>
-                            <a href="<?php echo U('Mangement/manage_blog');?>">
-                                <span class="menu-text">博客管理</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo U('Commit/show_commit');?>" class="menu-dropdown">
-                                <span class="menu-text">留言管理</span>
-                            </a>
-                        </li>
-
-                    </ul>
                 </li>
 
-                <!--Widgets-->
+                <!-- 留言管理 -->
+                <li>
+                    <a href="<?php echo U('Commit/show_commit');?>">
+                        <i class="menu-icon fa   fa-comment"></i>
+                        <span class="menu-text">留言管理</span>
+                        <!-- <i class="menu-expand"></i> -->
+                    </a>
+                </li>
+
+
+                 <!-- 留言管理 -->
+                <li>
+                    <a href="<?php echo U('Photo/show_photo');?>">
+                        <i class="menu-icon fa  fa-picture-o"></i>
+                        <span class="menu-text">图片管理</span>
+                        <!-- <i class="menu-expand"></i> -->
+                    </a>
+                </li>
 
                 <!--UI Elements-->
                 <li>
-                    <a href="#" class="menu-dropdown">
+                    <a href="<?php echo U('Personal/user');?>" class="menu-dropdown">
                         <i class="menu-icon fa fa-user"></i>
                         <span class="menu-text"> 个人中心 </span>
-                        <i class="menu-expand"></i>
                     </a>
-
-                    <ul class="submenu">
-                        <li>
-                            <a href="elements.html">
-                                <span class="menu-text">个人详情</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="menu-dropdown">
-                                <span class="menu-text">我的简介</span>
-                            </a>
-                        </li>
-
-                    </ul>
                 </li>
             </ul>
             <!-- /Sidebar Menu -->
@@ -353,15 +334,15 @@
                 </div>
                 <!--Header Buttons-->
                 <div class="header-buttons">
-                    <a class="sidebar-toggler" href="#">
+                    <!-- <a class="sidebar-toggler" href="#">
                         <i class="fa fa-arrows-h"></i>
-                    </a>
+                    </a> -->
                     <a class="refresh" id="refresh-toggler" href="">
                         <i class="glyphicon glyphicon-refresh"></i>
                     </a>
-                    <a class="fullscreen" id="fullscreen-toggler" href="#">
-                        <i class="glyphicon glyphicon-fullscreen"></i>
-                    </a>
+                   <!--  <a class="fullscreen" id="fullscreen-toggler" href="#">
+                       <i class="glyphicon glyphicon-fullscreen"></i>
+                   </a> -->
                 </div>
                 <!--Header Buttons End-->
             </div>
@@ -375,7 +356,7 @@
             <div class="col-xs-12 col-md-12">
                 <div class="widget">
                     <div class="widget-header ">
-                        <span class="widget-caption"><i class="fa fa-globe"></i>&nbsp;&nbsp;网站访问量</span>
+                       <!--  <span class="widget-caption"><i class="fa fa-globe"></i>&nbsp;&nbsp;网站访问量</span> -->
                         <div class="widget-buttons">
                             <a href="#" data-toggle="maximize">
                                 <i class="fa fa-expand"></i>
@@ -386,7 +367,64 @@
                         </div>
                     </div>
                     <div class="widget-body">
+                       <div class="row">
+                           <div class="col-xs-12">
+                               <div class="row">
+                                   <div class="col-xs-12 col-md-6">
+                                       <div class="widget">
+                                       <input type="text" id="get_date" url="/myblogv1/index.php/Admin/Index/retrun_date" style="display:none">
+                                           <div class="widget-header "> <span class="widget-caption"><i class="fa fa-globe"></i>&nbsp;&nbsp;博客浏览量</span></div>
+                                           <div class="widget-body">
+                                                <div id="container" style="height: 400px"></div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="widget">
+                                       <input type="text" id="get_type" data="<?php echo U('Index/get_type_count');?>" style="display:none">
+                                           <div class="widget-header "><span class="widget-caption"><i class="fa fa-globe"></i>&nbsp;&nbsp;博客分类统计</span></div>
+                                           <div class="widget-body">
+                                                <div id="containers" style="height: 400px"></div>
+                                           </div>
+                                       </div>
+                                    </div>
+                               </div>
+                           </div>
+                           <!-- 博客浏览量统计 -->
+                           <div class="col-xs-12">
+                             <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                        <div class="widget">
+                                       <input type="text" id="get_type" data="<?php echo U('Index/get_type_count');?>" style="display:none">
+                                           <div class="widget-header "><span class="widget-caption"><i class="fa fa-globe"></i>&nbsp;&nbsp;最近发布的博客</span></div>
+                                           <div class="widget-body">
+                                                 <?php if(is_array($blog_data)): $i = 0; $__LIST__ = $blog_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><h5 class="row-title before-blueberry" style="width:100%">
+                                                     <i class="typcn typcn-th-menu blueberry"></i>
+                                                    <?php echo ($vo["title"]); ?>【发布日期】<a href="#" style="color:#448AFF"><?php echo (date("Y-m-d",$vo["public_date"])); ?></a>【浏览量】<a href="#" style="color:#448AFF"><?php echo ($vo["browsenumber"]); ?></a>【点赞数】<a href="#" style="color:#448AFF"><?php echo ($vo["praise"]); ?></a>
+                                                 </h5><?php endforeach; endif; else: echo "" ;endif; ?>
+                                           </div>
+                                       </div>
+                                    </div>
 
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="widget">
+                                       <input type="text" id="get_type" data="<?php echo U('Index/get_type_count');?>" style="display:none">
+                                           <div class="widget-header "><span class="widget-caption"><i class="fa fa-globe"></i>&nbsp;&nbsp;最近留言</span></div>
+                                           <div class="widget-body">
+                                                 <?php if(is_array($commit_date)): $i = 0; $__LIST__ = $commit_date;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><h5 class="row-title before-blueberry" style="width:100%">
+                                                     <i class="typcn typcn-th-menu blueberry"></i>
+                                                    <?php echo ($vo["userful_chat"]); ?>【内容】<a href="#" style="color:#448AFF"><?php echo ($vo["message"]); ?></a>【日期】<a href="#" style="color:#448AFF"><?php echo (date("Y-m-d H:i:s",$vo["message_time"])); ?></a>
+                                                 </h5><?php endforeach; endif; else: echo "" ;endif; ?>
+                                           </div>
+                                       </div>
+                                    </div>
+                             </div>
+                           </div>
+
+
+                       </div>
+                       
                     </div>
                 </div>
             </div>
@@ -463,6 +501,130 @@
 
    <!-- <script type="text/javascript" src="/myblogv1/Public/admin/js/index.js"></script>
     <script type="text/javascript" src="/myblogv1/Public//Home/Data/js/jquery.tmpl.js"></script>-->
+     <script src="/myblogv1/Public/admin/static/Highcharts/js/highcharts.js"></script>
+     <script src="/myblogv1/Public/admin/static/Highcharts/js/highcharts-3d.js"></script>
+     <script src="/myblogv1/Public/admin/static/Highcharts/js/modules/exporting.js"></script>
+     <script type="text/javascript">
+           /*画出博客浏览图表*/
+      $(function() {
+           var a= new Array();
+           var b= new Array();
+
+           /* $("ul li").eq(0).removeClass('active');
+            $("ul li").eq(5).addClass('active');*/
+            $.ajax({
+                type:'POST',
+                url:$("#get_date").attr('url'),
+                data:{ 
+                    id:'1'
+                },
+                success:function(data){
+                    for(var item in data){
+                         a.push(parseInt(data[item]));
+                         b.push(item);
+                         
+                    }
+                     $('#container').highcharts({
+                            chart: {
+                                type: 'column',
+                                margin: 75,
+                                options3d: {
+                                    enabled: true,
+                                    alpha: 10,
+                                    beta: 25,
+                                    depth: 70
+                                }
+                            },
+                            title: {
+                                text: '博客浏览量统计'
+                            },
+                            subtitle: {
+                                text: '对所有博客的浏览量进行统计'
+                            },
+                            plotOptions: {
+                                column: {
+                                    depth: 25
+                                }
+                            },
+                            xAxis: {
+                                categories:b
+                            },
+                            yAxis: {
+                                title: {
+                                    text:'博客浏览量'
+                                }
+                            },
+                            series: [{
+                                name: 'view',
+                                data: a
+                            }]
+                   });
+                }
+            });
+
+
+           var c= new Array();
+           var d= new Array();
+
+           /* $("ul li").eq(0).removeClass('active');
+            $("ul li").eq(5).addClass('active');*/
+            $.ajax({
+                type:'POST',
+                url:$("#get_type").attr('data'),
+                data:{ 
+                    id:'1'
+                },
+                success:function(data){
+                    for(var item in data){
+                         c.push(parseInt(data[item]));
+                         d.push(item);
+                         
+                    }
+                     $('#containers').highcharts({
+                            chart: {
+                                type: 'column',
+                                margin: 75,
+                                options3d: {
+                                    enabled: true,
+                                    alpha: 10,
+                                    beta: 25,
+                                    depth: 70
+                                }
+                            },
+                            title: {
+                                text: '博客分类统计'
+                            },
+                            subtitle: {
+                                text: '对所有博客的浏览量进行统计'
+                            },
+                            plotOptions: {
+                                column: {
+                                    depth: 25
+                                }
+                            },
+                            xAxis: {
+                                categories:d
+                            },
+                            yAxis: {
+                                title: {
+                                    text:'博客浏览量'
+                                }
+                            },
+                            series: [{
+                                name: '类型',
+                                data: c
+                            }]
+                   });
+                }
+            });
+                
+                
+            
+
+         });
+
+
+     </script>
 
 </body>
 <!--  /Body -->

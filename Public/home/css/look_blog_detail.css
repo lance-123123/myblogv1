@@ -3,3 +3,76 @@
     -moz-transform:scale(1.5,1.5);
     -transform:scale(1.5,1.5);
 }
+
+#get_chat{
+    background-color: #2dc3e8;
+    content: "";
+    display: block;
+    left: -4px;
+    max-width: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 4px;
+}
+
+yellow::before {
+    background-color: #ffce55 !important;
+}
+#commit_content{
+   /*  border-color: #737A84;
+   border-bottom:0.5px  solid;
+   border-top:0.5px  solid;
+   border-radius:25px;
+   -moz-border-radius:25px; Old Firefox
+   margin-bottom: 15px; */
+}
+
+.comment-body{
+    padding: 15px 15px;
+    margin-top:20px;
+   border-left : 3px solid #ffce55; /*左框线*/
+   margin-bottom: 10px;
+    border-top:1px solid #DEDEDE;
+    border-bottom:1px solid #DEDEDE;
+    color:  #525554;
+}
+
+#message_content{
+  /*   border-color: #EEEEEE;
+     border-bottom:0.5px  solid #EEEEEE;
+     border-radius:25px solid #EEEEEE;
+     border-radius:25px solid #EEEEEE;
+     -moz-border-radius:25px; Old Firefox
+     margin-bottom: 15px; */
+   background-color: #ffffff;
+}
+#me_set{
+    padding: 15px 15px;
+    border:1px solid #EEEEEE;
+    webkit-box-shadow:0 0 10px rgba(184,185,185,20);
+    -moz-box-shadow:0 0 10px rgba(184,185,185,20);
+    box-shadow:0 0 10px rgba(184,185,185,20);
+    background-color: #ffffff;
+    border-radius:40px solid #EEEEEE;
+    -moz-border-radius:40px; Old Firefox
+}
+
+#submit{
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+     background-color: #5bc0de;
+    border-color: #46b8da;
+    color: #fff;
+}

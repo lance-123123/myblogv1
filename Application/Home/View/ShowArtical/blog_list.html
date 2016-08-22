@@ -1,0 +1,82 @@
+<extend name="Base/base" />
+
+<block name="style">
+<link href="__CSS__/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+</block>
+<block name="article">
+    <h2 class="about_h">您现在的位置是：<a href="javascript:void()">文章</a><a href="javascript:void()"></a></h2>
+    <div class="bloglist">
+<input type="hidden" value="{:U('Index/add_blog_number')}" id="plug_number">
+     <volist name="blog_list" id="vo">
+      <div class="newblog">
+        <ul>
+          <h3><a href="{:U('Index/look_blog_detail')}?id={$vo.id}" class="readmore1" data="{$vo.id}">{$vo.title}</a></h3>
+
+          <div class="autor"><span>作者：程鹏辉</span><span>分类：[<a href="javascript:void(0)">{$vo.type_name}</a>]</span><span>浏览（<a href="/">{$vo.browsenumber}</a>）</span><span>评论（<a href="/">{$vo.commit_count}</a>）</span><span>点赞（<a href="/">{$vo.praise}</a>）</span></div>
+          <p>{$vo.blog_newsletter|htmlspecialchars_decode}<a href="{:U('Index/look_blog_detail')}?id={$vo.id}" data="{$vo.id}" class="readmore">全文</a></p>
+        </ul>
+        <figure><img src="__UPLOADS__/{$vo.blog_photo}"></figure>
+        <div class="dateview">{$vo.public_date|date="Y-m-d",###}</div>
+      </div>
+      </volist>
+
+    </div>
+    <div class="page">
+      {$page}
+    </div>
+</block>
+
+<block name="script">
+<!-- <script src="__PLUG__/js/jquery.min.js"></script>
+<script src="__PLUG__/js/custom.js"></script>
+<script src="__PLUG__/js/slides/slides.min.jquery.js"></script>
+<script src="__PLUG__/js/cycle-slider/cycle.js"></script>
+<script src="__PLUG__/js/nivo-slider/jquery.nivo.slider.js"></script>
+<script src="__PLUG__/js/tabify/jquery.tabify.js"></script>
+<script src="__PLUG__/js/prettyPhoto/jquery.prettyPhoto.js"></script>
+<script src="__PLUG__/js/twitter/jquery.tweet.js"></script>
+<script src="__PLUG__/js/scrolltop/scrolltopcontrol.js"></script>
+<script src="__PLUG__/js/portfolio/filterable.js"></script>
+<script src="__PLUG__/js/modernizr/modernizr-2.0.3.js"></script>
+<script src="__PLUG__/js/easing/jquery.easing.1.3.js"></script>
+<script src="__PLUG__/js/kwicks/jquery.kwicks-1.5.1.pack.js"></script>
+<script src="__PLUG__/js/swfobject/swfobject.js"></script> -->
+<script type="text/javascript">
+  $(function() { 
+     /* $('.one-third').mouseover(function(){
+        $(this).addClass("box-shadow-3");
+       });
+      $('.one-third').mouseleave(function(){
+        $(this).removeClass("box-shadow-3");
+       });*/
+
+      $(".readmore").click(function(){
+        var id= $(this).attr("data");
+        $.ajax({
+           type: 'POST',
+           url: $("#plug_number").attr("value"),
+           data: {
+              'id': id
+             }
+          });
+      });
+
+      $(".readmore1").click(function(){
+        var id= $(this).attr("data");
+        $.ajax({
+           type: 'POST',
+           url: $("#plug_number").attr("value"),
+           data: {
+              'id': id
+             }
+          });
+      });
+
+  });
+</script>
+</block>

@@ -267,44 +267,54 @@
             <!-- Sidebar Menu -->
             <ul class="nav sidebar-menu">
                 <li class="active">
-                    <a href="<?php echo U('AddBlog/addblog');?>">
+                <!-- 博客的访问量 -->
+                    <a href="<?php echo U('Index/index');?>">
                         <i class="menu-icon glyphicon glyphicon-home"></i>
                         <span class="menu-text"> 首页 </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="<?php echo U('AddBlog/addblog');?>">
+                    <a href="<?php echo U('Mangement/manage_blog');?>" class="menu-dropdown">
                         <i class="menu-icon fa  fa-edit"></i>
-                        <span class="menu-text"> 写文章 </span>
+                        <span class="menu-text">文章管理</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="menu-dropdown">
+                        <i class="menu-icon fa   fa-puzzle-piece"></i>
+                        <span class="menu-text">类型管理</span>
                     </a>
                 </li>
                 <!--Databoxes-->
 
                 <li>
-                    <a href="#" class="menu-dropdown">
-                        <i class="menu-icon fa fa-desktop"></i>
-                        <span class="menu-text">后台管理</span>
-                        <i class="menu-expand"></i>
+                    <a href="#">
+                        <i class="menu-icon fa  fa-th-list"></i>
+                        <span class="menu-text">历史管理</span>
+                        <!-- <i class="menu-expand"></i> -->
                     </a>
-
-                    <ul class="submenu">
-                        <li>
-                            <a href="<?php echo U('Mangement/manage_blog');?>">
-                                <span class="menu-text">博客管理</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo U('Commit/show_commit');?>" class="menu-dropdown">
-                                <span class="menu-text">留言管理</span>
-                            </a>
-                        </li>
-
-                    </ul>
                 </li>
 
-                <!--Widgets-->
+                <!-- 留言管理 -->
+                <li>
+                    <a href="<?php echo U('Commit/show_commit');?>">
+                        <i class="menu-icon fa   fa-comment"></i>
+                        <span class="menu-text">留言管理</span>
+                        <!-- <i class="menu-expand"></i> -->
+                    </a>
+                </li>
+
+
+                 <!-- 留言管理 -->
+                <li>
+                    <a href="#">
+                        <i class="menu-icon fa  fa-picture-o"></i>
+                        <span class="menu-text">图片管理</span>
+                        <!-- <i class="menu-expand"></i> -->
+                    </a>
+                </li>
 
                 <!--UI Elements-->
                 <li>
@@ -402,6 +412,7 @@
                                     <label>内容</label>
                                     <textarea id="editor" name="content">
                                     </textarea>
+                                    <textarea id="blis" style="display:none"></textarea>
                                 </div>
 
                                 <div class="form-group" style="margin-left: 7%">
@@ -423,6 +434,13 @@
                                 <div class="form-group">
                                     <label>标签</label>
                                         <input type="text" id="tagsvalue" class="form-control" value="技术" data-role="tagsinput" name="tags" placeholder="Add tags" />
+                                </div>
+
+                                <div class="form-group">
+                                     <label>博客分类</label>
+                                     <select id="blog_type" style="width:100%">
+                                  <?php if(is_array($blog_list)): $i = 0; $__LIST__ = $blog_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                     </select>
                                 </div>
 
                                 <input type="hidden" id="photourl">
